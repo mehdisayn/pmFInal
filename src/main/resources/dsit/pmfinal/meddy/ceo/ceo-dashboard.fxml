@@ -28,53 +28,53 @@
                   <Font name="System Bold" size="36.0" />
                </font>
             </Label>
-            <Button layoutX="463.0" layoutY="313.0" mnemonicParsing="false" onAction="#logoutOnAction" prefHeight="19.0" prefWidth="105.0" style="-fx-background-color: #E74C3C;" text="Logout" textFill="WHITE">
+            <Button layoutX="463.0" layoutY="313.0" mnemonicParsing="false" onAction="#btnLogout" prefHeight="19.0" prefWidth="105.0" style="-fx-background-color: #E74C3C;" text="Logout" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Button>
-            <Button layoutX="17.0" layoutY="121.0" mnemonicParsing="false" onAction="#strategicPlanningOnAction" prefHeight="28.0" prefWidth="151.0" style="-fx-background-color: #E74C3C;" text="Strategic Planning" textFill="WHITE">
+            <Button layoutX="377.0" layoutY="160.0" mnemonicParsing="false" onAction="#btnDepartmentPerformance" prefHeight="28.0" prefWidth="191.0" style="-fx-background-color: #E74C3C;" text="Department Performance" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Button>
-            <Button layoutX="417.0" layoutY="121.0" mnemonicParsing="false" onAction="#departmentOverviewOnAction" prefHeight="28.0" prefWidth="151.0" style="-fx-background-color: #E74C3C;" text="Department Overview" textFill="WHITE">
+            <Button layoutX="376.0" layoutY="121.0" mnemonicParsing="false" onAction="#btnApproveSalaries" prefHeight="28.0" prefWidth="192.0" style="-fx-background-color: #E74C3C;" text="Approve Salaries" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Button>
-            <Button layoutX="17.0" layoutY="198.0" mnemonicParsing="false" onAction="#financialSummaryOnAction" prefHeight="28.0" prefWidth="151.0" style="-fx-background-color: #E74C3C;" text="Financial Summary" textFill="WHITE">
+            <Button layoutX="17.0" layoutY="198.0" mnemonicParsing="false" onAction="#btnApproveBudget" prefHeight="28.0" prefWidth="151.0" style="-fx-background-color: #E74C3C;" text="Approve Budget" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Button>
-            <Button layoutX="17.0" layoutY="235.0" mnemonicParsing="false" onAction="#complianceReportOnAction" prefHeight="28.0" prefWidth="151.0" style="-fx-background-color: #E74C3C;" text="Compliance Report" textFill="WHITE">
+            <Button layoutX="17.0" layoutY="235.0" mnemonicParsing="false" onAction="#btnReviewMaintenance" prefHeight="28.0" prefWidth="151.0" style="-fx-background-color: #E74C3C;" text="Review Maintenance" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Button>
-            <Button layoutX="17.0" layoutY="160.0" mnemonicParsing="false" onAction="#productionReportOnAction" prefHeight="28.0" prefWidth="151.0" style="-fx-background-color: #E74C3C;" text="Production Reports" textFill="WHITE">
+            <Button layoutX="17.0" layoutY="160.0" mnemonicParsing="false" onAction="#btnApproveShifts" prefHeight="28.0" prefWidth="151.0" style="-fx-background-color: #E74C3C;" text="Approve Shifts" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Button>
-            <Button layoutX="17.0" layoutY="274.0" mnemonicParsing="false" onAction="#performanceMetricsOnAction" prefHeight="28.0" prefWidth="151.0" style="-fx-background-color: #E74C3C;" text="Performance Metrics" textFill="WHITE">
+            <Button layoutX="17.0" layoutY="274.0" mnemonicParsing="false" onAction="#btnReviewHRDecisions" prefHeight="28.0" prefWidth="151.0" style="-fx-background-color: #E74C3C;" text="Review HR Decisions" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Button>
-            <Button layoutX="17.0" layoutY="313.0" mnemonicParsing="false" onAction="#feedbackReviewOnAction" prefHeight="28.0" prefWidth="151.0" style="-fx-background-color: #E74C3C;" text="Feedback Review" textFill="WHITE">
+            <Button layoutX="17.0" layoutY="313.0" mnemonicParsing="false" onAction="#btnReviewLogistics" prefHeight="28.0" prefWidth="151.0" style="-fx-background-color: #E74C3C;" text="Review Logistics" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Button>
-            <Button layoutX="417.0" layoutY="160.0" mnemonicParsing="false" onAction="#finalApprovalOnAction" prefHeight="28.0" prefWidth="151.0" style="-fx-background-color: #E74C3C;" text="Final Approval" textFill="WHITE">
+            <Button layoutX="17.0" layoutY="121.0" mnemonicParsing="false" onAction="#btnViewProduction" prefHeight="28.0" prefWidth="151.0" style="-fx-background-color: #E74C3C;" text="View Production" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Button>
-            <Label alignment="TOP_LEFT" layoutX="417.0" layoutY="202.0" prefHeight="98.0" prefWidth="156.0" text="Notifications :" textFill="WHITE" />
-            <Label fx:id="notificationsLabel" alignment="TOP_LEFT" layoutX="417.0" layoutY="220.0" prefHeight="84.0" prefWidth="156.0" textFill="WHITE" />
+            <Label alignment="TOP_LEFT" layoutX="375.0" layoutY="202.0" prefHeight="98.0" prefWidth="198.0" text="Notifications :" textFill="WHITE" />
+            <Label fx:id="notificationsLabel" alignment="TOP_LEFT" layoutX="374.0" layoutY="220.0" prefHeight="84.0" prefWidth="199.0" textFill="WHITE" />
          </children>
       </AnchorPane>
    </center>
