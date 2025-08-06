@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #36454F;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dsit.pmfinal.rrhin.Controller.PlaceOrderController">
+   <children>
+      <Label layoutX="218.0" layoutY="14.0" text="Place Order" textFill="#e74c3c">
+         <font>
+            <Font name="System Bold Italic" size="30.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="productTypeComboBox" layoutX="14.0" layoutY="73.0" prefWidth="150.0" promptText="Product Type" style="-fx-background-color: E74C3C;" />
+      <ComboBox fx:id="sizeComboBox" layoutX="14.0" layoutY="124.0" prefWidth="150.0" promptText="Size" style="-fx-background-color: E74C3C;" />
+      <Line endX="335.0" layoutX="265.0" layoutY="200.0" startX="-265.0" stroke="#e74c3c" strokeWidth="3.0" />
+      <TextField fx:id="quantityTextField" layoutX="226.0" layoutY="73.0" promptText="Quantity: " style="-fx-background-color: #E74C3C;" />
+      <TextField fx:id="deliveryAddressTextField" layoutX="226.0" layoutY="124.0" promptText="Delivery Address: " style="-fx-background-color: #E74C3C;" />
+      <DatePicker fx:id="expectedDeliveryDateDatePicker" layoutX="414.0" layoutY="73.0" promptText="Expected Delivery Date: " style="-fx-background-color: #E74C3C;" />
+      <Button layoutX="440.0" layoutY="120.0" mnemonicParsing="false" onAction="#handleOrderButton" prefHeight="59.0" prefWidth="105.0" style="-fx-background-color: #E74C3C;" text="ORDER" textFill="WHITE" />
+      <TextArea fx:id="statusTextArea" editable="false" layoutX="18.0" layoutY="216.0" prefHeight="145.0" prefWidth="283.0" style="-fx-background-color: #36454F;" wrapText="true" />
+      <Button layoutX="430.0" layoutY="318.0" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="37.0" prefWidth="71.0" style="-fx-background-color: #E74C3C;" text="Back" textFill="WHITE" />
+      <Button layoutX="528.0" layoutY="318.0" mnemonicParsing="false" onAction="#handleHomeButton" prefHeight="37.0" prefWidth="60.0" style="-fx-background-color: #E74C3C;" text="Home" textFill="WHITE" />
+   </children>
+</AnchorPane>

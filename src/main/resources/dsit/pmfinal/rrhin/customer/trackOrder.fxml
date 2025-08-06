@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="456.0" prefWidth="600.0" style="-fx-background-color: #36454F;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dsit.pmfinal.rrhin.Controller.TrackOrderController">
+   <children>
+      <Label layoutX="213.0" layoutY="14.0" text="Track Order " textFill="#e74c3c" underline="true">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <TableView fx:id="trackOrderTableView" layoutX="17.0" layoutY="66.0" prefHeight="160.0" prefWidth="567.0" style="-fx-background-color: #E74C3C;">
+        <columns>
+          <TableColumn fx:id="orderIdCol" prefWidth="136.0" text="Order ID" />
+          <TableColumn fx:id="dateCol" prefWidth="144.0" text="Date" />
+            <TableColumn fx:id="productCol" prefWidth="147.0" text="Product" />
+            <TableColumn fx:id="statusCol" prefWidth="139.0" text="Status" />
+        </columns>
+      </TableView>
+      <TextArea fx:id="orderDescriptionTextArea" editable="false" layoutX="17.0" layoutY="242.0" prefHeight="200.0" prefWidth="286.0" style="-fx-background-color: #E74C3C;" />
+      <Button layoutX="388.0" layoutY="380.0" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="45.0" prefWidth="77.0" style="-fx-background-color: #E74C3C;" text="Back" textFill="WHITE" />
+      <Button layoutX="488.0" layoutY="380.0" mnemonicParsing="false" onAction="#handleHomeButton" prefHeight="45.0" prefWidth="77.0" style="-fx-background-color: #E74C3C;" text="Home" textFill="WHITE" />
+   </children>
+</AnchorPane>
