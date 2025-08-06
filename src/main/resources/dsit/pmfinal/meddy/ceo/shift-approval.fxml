@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dsit.pmfinal.meddy.ceo.controller.ShiftApprovalController">
+    <bottom>
+        <Label text="devSharkIT" BorderPane.alignment="CENTER" />
+    </bottom>
+    <center>
+        <AnchorPane prefHeight="383.0" prefWidth="610.0" style="-fx-background-color: #36454F;" BorderPane.alignment="CENTER">
+            <children>
+                <Label layoutX="14.0" layoutY="15.0" prefHeight="51.0" prefWidth="172.0" text="CEO" textAlignment="CENTER" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="36.0" />
+                    </font>
+                </Label>
+                <Label layoutX="17.0" layoutY="66.0" prefHeight="25.0" prefWidth="142.0" text="Shift Approval" textAlignment="CENTER" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="278.0" layoutY="14.0" prefHeight="52.0" prefWidth="308.0" text="The Pulp Fiction Co." textAlignment="CENTER" textFill="PINK">
+                    <font>
+                        <Font name="System Bold" size="36.0" />
+                    </font>
+                </Label>
+                <Button layoutX="470.0" layoutY="338.0" mnemonicParsing="false" onAction="#btnBack" prefHeight="19.0" prefWidth="105.0" style="-fx-background-color: #E74C3C;" text="Back">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Button>
+            <Label layoutX="14.0" layoutY="352.0" text="Approve shift plans from Factory Manager" />
+            <TableView fx:id="tableShiftRequests" layoutX="12.0" layoutY="100.0" prefHeight="160.0" prefWidth="577.0">
+              <columns>
+                <TableColumn fx:id="columnDate" prefWidth="126.0" text="Date" />
+                <TableColumn fx:id="columnShift" prefWidth="102.0" text="Shift" />
+                  <TableColumn fx:id="columnReqBy" prefWidth="180.0" text="Requested by" />
+                  <TableColumn fx:id="columnStatus" prefWidth="168.0" text="Status" />
+              </columns>
+            </TableView>
+            <Button layoutX="470.0" layoutY="276.0" mnemonicParsing="false" onAction="#bntApprove" prefHeight="19.0" prefWidth="105.0" style="-fx-background-color: green;" text="Approve" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="352.0" layoutY="276.0" mnemonicParsing="false" onAction="#btnReject" prefHeight="19.0" prefWidth="105.0" style="-fx-background-color: #E74C3C;" text="Reject" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>
