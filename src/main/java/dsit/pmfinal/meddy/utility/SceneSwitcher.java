@@ -1,4 +1,4 @@
-package dsit.pmfinal.meddy.ceo.utility;
+package dsit.pmfinal.meddy.utility;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;

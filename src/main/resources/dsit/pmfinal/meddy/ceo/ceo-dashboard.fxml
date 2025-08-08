@@ -38,7 +38,7 @@
                   <Font name="System Bold" size="14.0" />
                </font>
             </Button>
-            <Button layoutX="376.0" layoutY="121.0" mnemonicParsing="false" onAction="#btnApproveSalaries" prefHeight="28.0" prefWidth="192.0" style="-fx-background-color: #E74C3C;" text="Approve Salaries" textFill="WHITE">
+            <Button layoutX="17.0" layoutY="313.0" mnemonicParsing="false" onAction="#btnApproveSalaries" prefHeight="28.0" prefWidth="153.0" style="-fx-background-color: #E74C3C;" text="Approve Salaries" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
@@ -63,7 +63,7 @@
                   <Font name="System Bold" size="14.0" />
                </font>
             </Button>
-            <Button layoutX="17.0" layoutY="313.0" mnemonicParsing="false" onAction="#btnReviewLogistics" prefHeight="28.0" prefWidth="151.0" style="-fx-background-color: #E74C3C;" text="Review Logistics" textFill="WHITE">
+            <Button layoutX="376.0" layoutY="121.0" mnemonicParsing="false" onAction="#btnStrategicPlanning" prefHeight="28.0" prefWidth="192.0" style="-fx-background-color: #E74C3C;" text="Strategic Planning" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
