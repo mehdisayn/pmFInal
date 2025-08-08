@@ -1,5 +1,6 @@
 package dsit.pmfinal.meddy.ceo.controller;
 
+import dsit.pmfinal.PrimarySceneSwitcher;
 import dsit.pmfinal.meddy.utility.SceneSwitcher;
 import javafx.event.ActionEvent;
 import javafx.scene.Node;
@@ -21,6 +22,7 @@ public class CeoDashboardController
 
     @javafx.fxml.FXML
     public void btnLogout(ActionEvent actionEvent) {
+        PrimarySceneSwitcher.primarySwitchScene((Node) actionEvent.getSource(), "login.fxml", "Login");
 
     }
 
