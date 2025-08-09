@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #36454F;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dsit.pmfinal.rrhin.Controller.SubmitComplaintController">
+   <children>
+      <Label layoutX="198.0" layoutY="11.0" text="Submit Complaint" textFill="#e74c3c" underline="true">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="selectOrderComboBox" layoutX="22.0" layoutY="89.0" prefHeight="25.0" prefWidth="256.0" promptText="Select Order" style="-fx-background-color: #E74C3C;" />
+      <ComboBox fx:id="complaintsTypeComboBox" layoutX="22.0" layoutY="134.0" prefHeight="25.0" prefWidth="256.0" promptText="Complaint Type" style="-fx-background-color: #E74C3C;" />
+      <TextArea fx:id="complaintDetailsTextArea" layoutX="22.0" layoutY="174.0" prefHeight="200.0" prefWidth="256.0" style="-fx-background-color: #E74C3C;" />
+      <Line endX="-90.0" endY="188.0" layoutX="417.0" layoutY="181.0" startX="-90.0" startY="-90.0" stroke="#e74c3c" strokeWidth="5.0" />
+      <Button layoutX="411.0" layoutY="107.0" mnemonicParsing="false" onAction="#handleSubmitButton" prefHeight="54.0" prefWidth="112.0" style="-fx-background-color: #E74C3C;" text="Submit" textFill="WHITE" />
+      <Button layoutX="411.0" layoutY="322.0" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="32.0" prefWidth="65.0" style="-fx-background-color: #E74C3C;" text="Back" textFill="WHITE" />
+      <Button layoutX="502.0" layoutY="322.0" mnemonicParsing="false" onAction="#handleHomeButton" prefHeight="32.0" prefWidth="65.0" style="-fx-background-color: #E74C3C;" text="Home" textFill="WHITE" />
+      <TextArea fx:id="errorTextArea" layoutX="367.0" layoutY="174.0" prefHeight="77.0" prefWidth="200.0" />
+      <Label layoutX="424.0" layoutY="14.0" text="Hakkani Pulp &amp; Paper Mills Ltd" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
