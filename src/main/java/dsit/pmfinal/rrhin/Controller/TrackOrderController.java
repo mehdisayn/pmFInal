@@ -42,7 +42,7 @@ public class TrackOrderController
 
     @javafx.fxml.FXML
     public void handleHomeButton(ActionEvent actionEvent) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("/dsit/pmfinal/rrhin/customer/dashboard.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/dsit/pmfinal/rrhin/customer/customer-dashboard.fxml"));
         stage=(Stage)((Node)actionEvent.getSource()).getScene() .getWindow();
         scene=new Scene(root);
         stage.setScene(scene);
