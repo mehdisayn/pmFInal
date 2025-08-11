@@ -30,7 +30,7 @@ public class ProductionOverviewController
 
     @javafx.fxml.FXML
     public void btnBack(ActionEvent actionEvent) {
-        SceneSwitcher.switchScene((Node) actionEvent.getSource(), "ceo-customer-dashboard.fxml", "CEO Dashboard");
+        SceneSwitcher.switchScene((Node) actionEvent.getSource(), "ceo-dashboard.fxml", "CEO Dashboard");
     }
 
     @javafx.fxml.FXML
