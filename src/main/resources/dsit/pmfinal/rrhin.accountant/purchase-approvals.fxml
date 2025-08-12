@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #36454F;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dsit.pmfinal.rrhin.accountant.Controller.PurchaseApprovalsController">
+   <children>
+      <Label layoutX="115.0" layoutY="14.0" text="High-Cost Purchase Approvals" textFill="#e74c3c" underline="true">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <TableView fx:id="purchaseApprovalTableView" layoutX="30.0" layoutY="73.0" prefHeight="151.0" prefWidth="543.0" style="-fx-background-color: #E74C3C;">
+        <columns>
+          <TableColumn fx:id="requestIdCol" prefWidth="115.0" text="Request ID" />
+          <TableColumn fx:id="itemNameCol" prefWidth="93.0" text="Item Name" />
+            <TableColumn fx:id="amountCol" prefWidth="111.0" text="Amount" />
+            <TableColumn fx:id="departmentCol" prefWidth="112.0" text="Department" />
+            <TableColumn fx:id="statusCol" prefWidth="111.0" text="Status" />
+        </columns>
+      </TableView>
+      <Button layoutX="115.0" layoutY="324.0" mnemonicParsing="false" onAction="#handleApproveButton" prefHeight="48.0" prefWidth="156.0" style="-fx-background-color: #E74C3C;" text="Approve">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="330.0" layoutY="324.0" mnemonicParsing="false" onAction="#handleRejectButton" prefHeight="48.0" prefWidth="156.0" style="-fx-background-color: #E74C3C;" text="Reject">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="purchaseApprovalTextArea" layoutX="62.0" layoutY="253.0" prefHeight="48.0" prefWidth="472.0" style="-fx-background-color: #E74C3C;" />
+      <Line endX="276.0" layoutX="324.0" layoutY="239.0" startX="-324.0" stroke="#e74c3c" strokeWidth="5.0" />
+      <Button layoutX="528.0" layoutY="358.0" mnemonicParsing="false" onAction="#handleHomeButton" prefHeight="27.0" prefWidth="61.0" style="-fx-background-color: #E74C3C;" text="Home">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

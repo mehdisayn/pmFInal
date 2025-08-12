@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #36454F;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dsit.pmfinal.rrhin.accountant.Controller.ExpensesController">
+   <children>
+      <Label layoutX="193.0" layoutY="14.0" text="Track Expenses" textFill="#e74c3c" underline="true">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <TableView fx:id="trackExpensesTableView" layoutX="14.0" layoutY="67.0" prefHeight="151.0" prefWidth="572.0" style="-fx-background-color: #E74C3C;">
+        <columns>
+          <TableColumn fx:id="expenseIdCol" prefWidth="152.0" text="Expense ID" />
+          <TableColumn fx:id="categoryCol" prefWidth="140.0" text="Category" />
+            <TableColumn fx:id="amountCol" prefWidth="141.0" text="Amount" />
+            <TableColumn fx:id="dateCol" prefWidth="138.0" text="Date" />
+        </columns>
+      </TableView>
+      <Line endX="300.0" layoutX="300.0" layoutY="239.0" startX="-306.0" stroke="#e74c3c" strokeWidth="5.0" />
+      <ComboBox fx:id="categoryComBobox" layoutX="43.0" layoutY="267.0" prefWidth="150.0" promptText="Category" style="-fx-background-color: #E74C3C;" />
+      <TextField fx:id="amountTextField" layoutX="226.0" layoutY="267.0" promptText="Amount: " style="-fx-background-color: #E74C3C;" />
+      <DatePicker fx:id="dateDatePicker" layoutX="400.0" layoutY="267.0" promptText="Date: " style="-fx-background-color: #E74C3C;" />
+      <Button layoutX="254.0" layoutY="323.0" mnemonicParsing="false" onAction="#handleAddExpenseButton" prefHeight="54.0" prefWidth="95.0" style="-fx-background-color: #E74C3C;" text="Add Expense" />
+      <Button layoutX="487.0" layoutY="350.0" mnemonicParsing="false" onAction="#handleHomeButton" style="-fx-background-color: #E74C3C;" text="Home" />
+   </children>
+</AnchorPane>

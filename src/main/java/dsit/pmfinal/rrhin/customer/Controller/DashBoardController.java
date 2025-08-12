@@ -1,5 +1,7 @@
-package dsit.pmfinal.rrhin.Controller;
+package dsit.pmfinal.rrhin.customer.Controller;
 
+import dsit.pmfinal.PrimarySceneSwitcher;
+import dsit.pmfinal.rrhin.RrhinSceneSwitch;
 import javafx.event.ActionEvent;
 import javafx.event.Event;
 import javafx.fxml.FXMLLoader;
@@ -7,20 +9,16 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextArea;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
 public class DashBoardController
 {
+
     @javafx.fxml.FXML
-    private Label phoneLabel;
-    @javafx.fxml.FXML
-    private Label emailLabel;
-    @javafx.fxml.FXML
-    private Label nameLabel;
-    @javafx.fxml.FXML
-    private Label userIdLabel;
+    private TextArea dashboardTextArea;
 
     @javafx.fxml.FXML
     public void initialize() {
@@ -40,7 +38,11 @@ public class DashBoardController
     }
 
     @javafx.fxml.FXML
-    public void handleSignOutButton(ActionEvent actionEvent) {
+    public void handleSignOutButton(ActionEvent actionEvent) throws IOException {
+        PrimarySceneSwitcher.primarySwitchScene((Node)actionEvent.getSource(),"login.fxml","Login");
+        //RrhinSceneSwitch.rrhinSceneSwitcher((Node)actionEvent.getSource(),"login.fxml","Login");
+//        Parent root = FXMLLoader.load(getClass().getResource("/dsit/pmfinal/login.fxml"));
+//        stage = (Stage)(())
     }
 
     @javafx.fxml.FXML

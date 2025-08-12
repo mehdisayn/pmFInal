@@ -9,7 +9,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #36454F;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dsit.pmfinal.rrhin.Controller.EditProfileController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #36454F;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dsit.pmfinal.rrhin.customer.Controller.EditProfileController">
    <children>
       <Label layoutX="222.0" layoutY="14.0" text="Edit Profile" textFill="#e74c3c" underline="true">
          <font>
@@ -25,7 +25,7 @@
       <Button layoutX="251.0" layoutY="307.0" mnemonicParsing="false" onAction="#handleSaveButton" prefHeight="55.0" prefWidth="98.0" style="-fx-background-color: #E74C3C;" text="Save" textFill="WHITE" />
       <Button layoutX="396.0" layoutY="334.0" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="37.0" prefWidth="72.0" style="-fx-background-color: #E74C3C;" text="Back" textFill="WHITE" />
       <Button layoutX="491.0" layoutY="334.0" mnemonicParsing="false" onAction="#handleHomeButton" prefHeight="37.0" prefWidth="72.0" style="-fx-background-color: #E74C3C;" text="Home" textFill="WHITE" />
-      <TextArea fx:id="errorTextArea" layoutX="394.0" layoutY="88.0" prefHeight="159.0" prefWidth="180.0" style="-fx-background-color: #E74C3C;" />
+      <TextArea fx:id="errorTextArea" layoutX="387.0" layoutY="105.0" prefHeight="159.0" prefWidth="180.0" style="-fx-background-color: #E74C3C;" />
       <Label layoutX="410.0" layoutY="14.0" text="Hakkani Pulp &amp; Paper Mills Ltd" textFill="WHITE">
          <font>
             <Font name="Times New Roman" size="12.0" />

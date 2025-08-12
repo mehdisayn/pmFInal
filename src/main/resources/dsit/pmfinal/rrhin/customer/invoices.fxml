@@ -10,7 +10,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="400.0" prefWidth="653.0" style="-fx-background-color: #36454F;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dsit.pmfinal.rrhin.Controller.InvoicesController">
+<AnchorPane prefHeight="400.0" prefWidth="653.0" style="-fx-background-color: #36454F;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dsit.pmfinal.rrhin.customer.Controller.InvoicesController">
    <children>
       <Label layoutX="179.0" layoutY="14.0" text="Invoices &amp; Payments" textFill="#e74c3c" underline="true">
          <font>
