@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #36454F;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dsit.pmfinal.rrhin.accountant.Controller.InventoryValuationController">
+   <children>
+      <TableView fx:id="inventoryValuationTableView" layoutX="30.0" layoutY="66.0" prefHeight="150.0" prefWidth="541.0" style="-fx-background-color: E74C3C;">
+        <columns>
+          <TableColumn fx:id="itemNameCol" prefWidth="122.0" text="Item Name" />
+          <TableColumn fx:id="quantityCol" prefWidth="155.0" text="Quantity" />
+            <TableColumn fx:id="unitPriceCol" prefWidth="128.0" text="Unit Price" />
+            <TableColumn fx:id="totalValueCol" prefWidth="138.0" text="Total Value" />
+        </columns>
+      </TableView>
+      <Label layoutX="160.0" layoutY="14.0" text="Inventory Valuation" textFill="#e74c3c" underline="true">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Button fx:id="handleCalculateValuationButton" layoutX="181.0" layoutY="344.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="241.0" style="-fx-background-color: E74C3C;" text="Calcualte Valuation">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Line endX="285.99993896484375" endY="-6.0" layoutX="314.0" layoutY="238.0" startX="-314.0" startY="-6.0" stroke="#e74c3c" strokeWidth="5.0" />
+      <TextArea fx:id="inventoryValuationTextArea" layoutX="60.0" layoutY="248.0" prefHeight="84.0" prefWidth="484.0" style="-fx-background-color: E74C3C;" />
+      <Button fx:id="handleHomeButton" layoutX="519.0" layoutY="360.0" mnemonicParsing="false" style="-fx-background-color: E74C3C;" text="Home">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -2,33 +2,52 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #36454F;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dsit.pmfinal.rrhin.Controller.DashBoardController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #36454F;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dsit.pmfinal.rrhin.customer.Controller.DashBoardController">
    <children>
       <Label layoutX="228.0" layoutY="20.0" text="DashBoard" textFill="#e74c3c" underline="true">
          <font>
             <Font name="System Bold" size="30.0" />
          </font>
       </Label>
-      <Button layoutX="41.0" layoutY="74.0" mnemonicParsing="false" onAction="#handlePlaceOrderButton" prefHeight="25.0" prefWidth="126.0" style="-fx-background-color: #E74C3C;" text="Place Order" />
-      <Button layoutX="41.0" layoutY="107.0" mnemonicParsing="false" onAction="#handleTrackOrdersButton" prefHeight="25.0" prefWidth="126.0" style="-fx-background-color: #E74C3C;" text="Track Orders" />
-      <Button layoutX="41.0" layoutY="138.0" mnemonicParsing="false" onAction="#handleInvoicesAndPaymentsButton" style="-fx-background-color: #E74C3C;" text="Invoices &amp; Payments" />
-      <Button layoutX="41.0" layoutY="169.0" mnemonicParsing="false" onAction="#handleSubmitComplaintButton" prefHeight="25.0" prefWidth="126.0" style="-fx-background-color: #E74C3C;" text="Submit Complaint" />
-      <Button layoutX="41.0" layoutY="200.0" mnemonicParsing="false" onAction="#handleEditProfileButton" prefHeight="25.0" prefWidth="126.0" style="-fx-background-color: #E74C3C;" text="Edit Profile" />
-      <Button layoutX="41.0" layoutY="231.0" mnemonicParsing="false" onAction="#handleRequestSampleButton" prefHeight="25.0" prefWidth="126.0" style="-fx-background-color: #E74C3C;" text="Request sample" />
-      <Button layoutX="41.0" layoutY="263.0" mnemonicParsing="false" onAction="#handleMakePaymentButton" prefHeight="25.0" prefWidth="126.0" style="-fx-background-color: #E74C3C;" text="Make Payment" />
-      <Button layoutX="443.0" layoutY="288.0" mnemonicParsing="false" onAction="#handleSignOutButton" style="-fx-background-color: #E74C3C;" text="Sign Out" />
-      <Line endX="-20.0" endY="-61.0" layoutX="401.0" layoutY="132.0" startX="-20.0" startY="146.0" stroke="#e74c3c" strokeWidth="3.0" />
-      <Label layoutX="405.0" layoutY="78.0" text="Name: " textFill="#e74c3c" />
-      <Label layoutX="405.0" layoutY="111.0" text="User ID: " textFill="#e74c3c" />
-      <Label layoutX="405.0" layoutY="142.0" text="Email: " textFill="#e74c3c" />
-      <Label layoutX="404.0" layoutY="173.0" text="Phone: " textFill="#e74c3c" />
-      <Label fx:id="nameLabel" layoutX="461.0" layoutY="78.0" text="Label" />
-      <Label fx:id="userIdLabel" layoutX="461.0" layoutY="111.0" text="Label" />
-      <Label fx:id="emailLabel" layoutX="461.0" layoutY="142.0" text="Label" />
-      <Label fx:id="phoneLabel" layoutX="461.0" layoutY="173.0" text="Label" />
+      <Button layoutX="41.0" layoutY="75.0" mnemonicParsing="false" onAction="#handlePlaceOrderButton" prefHeight="37.0" prefWidth="154.0" style="-fx-background-color: #E74C3C;" text="Place Order">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button layoutX="41.0" layoutY="122.0" mnemonicParsing="false" onAction="#handleTrackOrdersButton" prefHeight="37.0" prefWidth="154.0" style="-fx-background-color: #E74C3C;" text="Track Orders">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button layoutX="41.0" layoutY="170.0" mnemonicParsing="false" onAction="#handleInvoicesAndPaymentsButton" prefHeight="37.0" prefWidth="154.0" style="-fx-background-color: #E74C3C;" text="Invoices &amp; Payments">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button layoutX="41.0" layoutY="320.0" mnemonicParsing="false" onAction="#handleSubmitComplaintButton" prefHeight="37.0" prefWidth="154.0" style="-fx-background-color: #E74C3C;" text="Submit Complaint">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button layoutX="326.0" layoutY="320.0" mnemonicParsing="false" onAction="#handleEditProfileButton" prefHeight="37.0" prefWidth="154.0" style="-fx-background-color: #E74C3C;" text="Edit Profile">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button layoutX="41.0" layoutY="268.0" mnemonicParsing="false" onAction="#handleRequestSampleButton" prefHeight="37.0" prefWidth="154.0" style="-fx-background-color: #E74C3C;" text="Request sample">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button layoutX="41.0" layoutY="218.0" mnemonicParsing="false" onAction="#handleMakePaymentButton" prefHeight="37.0" prefWidth="154.0" style="-fx-background-color: #E74C3C;" text="Make Payment">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button layoutX="502.0" layoutY="345.0" mnemonicParsing="false" onAction="#handleSignOutButton" style="-fx-background-color: #E74C3C;" text="Sign Out">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Line endX="-20.0" endY="-66.0" layoutX="320.0" layoutY="139.0" startX="-20.0" startY="222.0" stroke="#e74c3c" strokeWidth="5.0" />
+      <Label alignment="CENTER" layoutY="386.0" prefHeight="17.0" prefWidth="600.0" style="-fx-background-color: white;" text="devSharkIT" />
+      <TextArea fx:id="dashboardTextArea" layoutX="326.0" layoutY="75.0" prefHeight="231.0" prefWidth="256.0" style="-fx-background-color: #E74C3C;" />
    </children>
 </AnchorPane>

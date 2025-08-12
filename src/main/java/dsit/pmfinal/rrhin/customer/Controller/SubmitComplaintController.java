@@ -1,4 +1,4 @@
-package dsit.pmfinal.rrhin.Controller;
+package dsit.pmfinal.rrhin.customer.Controller;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
