@@ -1,5 +1,6 @@
 package dsit.pmfinal.rrhin.accountant.Controller;
 
+import dsit.pmfinal.rrhin.accountant.model.SalesIncome;
 import javafx.event.ActionEvent;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TableColumn;
@@ -11,13 +12,13 @@ public class SalesIncomeController
     @javafx.fxml.FXML
     private DatePicker saleDateDatePicker;
     @javafx.fxml.FXML
-    private TableColumn amountCol;
+    private TableColumn <SalesIncome,Double> amountCol;
     @javafx.fxml.FXML
-    private TableColumn dateCol;
+    private TableColumn <SalesIncome,String> dateCol;
     @javafx.fxml.FXML
-    private TableView logSalesIncomeTableView;
+    private TableView <SalesIncome> logSalesIncomeTableView;
     @javafx.fxml.FXML
-    private TableColumn clientNameCol;
+    private TableColumn <SalesIncome,String> clientNameCol;
     @javafx.fxml.FXML
     private TextField amountTextField;
     @javafx.fxml.FXML

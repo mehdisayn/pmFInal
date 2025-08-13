@@ -1,5 +1,6 @@
 package dsit.pmfinal.rrhin.accountant.Controller;
 
+import dsit.pmfinal.rrhin.accountant.model.TaxAudit;
 import javafx.event.ActionEvent;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
@@ -10,13 +11,13 @@ public class TaxAuditController
     @javafx.fxml.FXML
     private TextArea taxAndAuditTextArea;
     @javafx.fxml.FXML
-    private TableColumn amountCol;
+    private TableColumn <TaxAudit,Double> amountCol;
     @javafx.fxml.FXML
-    private TableColumn statusCol;
+    private TableColumn <TaxAudit,String> statusCol;
     @javafx.fxml.FXML
-    private TableView taxAndAuditTableView;
+    private TableView <TaxAudit> taxAndAuditTableView;
     @javafx.fxml.FXML
-    private TableColumn taxTypeCol;
+    private TableColumn <TaxAudit,String> taxTypeCol;
 
     @javafx.fxml.FXML
     public void initialize() {

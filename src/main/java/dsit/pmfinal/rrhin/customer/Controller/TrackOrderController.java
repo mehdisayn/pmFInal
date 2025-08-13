@@ -1,5 +1,6 @@
 package dsit.pmfinal.rrhin.customer.Controller;
 
+import dsit.pmfinal.rrhin.customer.model.TrackOrder;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -15,17 +16,17 @@ import java.io.IOException;
 public class TrackOrderController
 {
     @javafx.fxml.FXML
-    private TableView trackOrderTableView;
+    private TableView <TrackOrder> trackOrderTableView;
     @javafx.fxml.FXML
-    private TableColumn dateCol;
+    private TableColumn <TrackOrder,String> dateCol;
     @javafx.fxml.FXML
-    private TableColumn statusCol;
+    private TableColumn <TrackOrder,String> statusCol;
     @javafx.fxml.FXML
     private TextArea orderDescriptionTextArea;
     @javafx.fxml.FXML
-    private TableColumn productCol;
+    private TableColumn <TrackOrder,String> productCol;
     @javafx.fxml.FXML
-    private TableColumn orderIdCol;
+    private TableColumn <TrackOrder,Integer> orderIdCol;
 
     @javafx.fxml.FXML
     public void initialize() {

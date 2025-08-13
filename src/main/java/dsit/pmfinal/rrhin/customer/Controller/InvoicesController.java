@@ -18,7 +18,7 @@ public class InvoicesController
     @javafx.fxml.FXML
     private TableView <Invoices> invoicesAndPaymentTableView;
     @javafx.fxml.FXML
-    private TableColumn <Invoices,String> amountCol;
+    private TableColumn <Invoices,Double> amountCol;
     @javafx.fxml.FXML
     private TableColumn <Invoices,String> dateCol;
     @javafx.fxml.FXML
@@ -26,7 +26,7 @@ public class InvoicesController
     @javafx.fxml.FXML
     private TextArea descriptionTextArea;
     @javafx.fxml.FXML
-    private TableColumn <Invoices,String> orderIdCol;
+    private TableColumn <Invoices,Integer> orderIdCol;
 
     @javafx.fxml.FXML
     public void initialize() {

@@ -18,7 +18,7 @@ public class MakePaymentsController
     @javafx.fxml.FXML
     private TableColumn <MakePayments,String> dueDateCol;
     @javafx.fxml.FXML
-    private TableColumn <MakePayments,String> amountCol;
+    private TableColumn <MakePayments,Double> amountCol;
     @javafx.fxml.FXML
     private TableColumn <MakePayments,String> statusCol;
     @javafx.fxml.FXML
@@ -28,7 +28,7 @@ public class MakePaymentsController
     @javafx.fxml.FXML
     private TextArea errorTextArea;
     @javafx.fxml.FXML
-    private TableColumn <MakePayments,String> orderIdCol;
+    private TableColumn <MakePayments,Double> orderIdCol;
 
     @javafx.fxml.FXML
     public void initialize() {

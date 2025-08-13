@@ -1,5 +1,6 @@
 package dsit.pmfinal.rrhin.accountant.Controller;
 
+import dsit.pmfinal.rrhin.accountant.model.PurchaseApprovals;
 import javafx.event.ActionEvent;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
@@ -8,19 +9,19 @@ import javafx.scene.control.TextArea;
 public class PurchaseApprovalsController
 {
     @javafx.fxml.FXML
-    private TableColumn departmentCol;
+    private TableColumn <PurchaseApprovals,String> departmentCol;
     @javafx.fxml.FXML
-    private TableColumn amountCol;
+    private TableColumn <PurchaseApprovals,Double> amountCol;
     @javafx.fxml.FXML
-    private TableColumn statusCol;
+    private TableColumn <PurchaseApprovals,String> statusCol;
     @javafx.fxml.FXML
-    private TableView purchaseApprovalTableView;
+    private TableView <PurchaseApprovals> purchaseApprovalTableView;
     @javafx.fxml.FXML
-    private TableColumn requestIdCol;
+    private TableColumn <PurchaseApprovals,Integer> requestIdCol;
     @javafx.fxml.FXML
     private TextArea purchaseApprovalTextArea;
     @javafx.fxml.FXML
-    private TableColumn itemNameCol;
+    private TableColumn <PurchaseApprovals,String> itemNameCol;
 
     @javafx.fxml.FXML
     public void initialize() {
