@@ -11,8 +11,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #36454F;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dsit.pmfinal.rrhin.accountant.Controller.ExpensesController">
+<AnchorPane prefHeight="412.0" prefWidth="603.0" style="-fx-background-color: #36454F;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dsit.pmfinal.rrhin.accountant.Controller.ExpensesController">
    <children>
       <Label layoutX="193.0" layoutY="14.0" text="Track Expenses" textFill="#e74c3c" underline="true">
          <font>
@@ -33,5 +32,6 @@
       <DatePicker fx:id="dateDatePicker" layoutX="400.0" layoutY="267.0" promptText="Date: " style="-fx-background-color: #E74C3C;" />
       <Button layoutX="254.0" layoutY="323.0" mnemonicParsing="false" onAction="#handleAddExpenseButton" prefHeight="54.0" prefWidth="95.0" style="-fx-background-color: #E74C3C;" text="Add Expense" />
       <Button layoutX="487.0" layoutY="350.0" mnemonicParsing="false" onAction="#handleHomeButton" style="-fx-background-color: #E74C3C;" text="Home" />
+      <Label alignment="CENTER" layoutX="-3.0" layoutY="404.0" prefHeight="17.0" prefWidth="611.0" style="-fx-background-color: white;" text="devSharkIT" />
    </children>
 </AnchorPane>

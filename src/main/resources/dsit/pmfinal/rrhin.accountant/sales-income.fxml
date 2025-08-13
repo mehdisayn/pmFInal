@@ -1,14 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="dsit.pmfinal.rrhin.accountant.Controller.SalesIncomeController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="422.0" prefWidth="615.0" style="-fx-background-color: #36454F;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dsit.pmfinal.rrhin.accountant.Controller.SalesIncomeController">
+   <children>
+      <Label layoutX="216.0" layoutY="14.0" text="Sales Income" textFill="#e74c3c">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="NameTextField" layoutX="36.0" layoutY="64.0" promptText="Client Name: " style="-fx-background-color: #E74C3C;" />
+      <TextField fx:id="amountTextField" layoutX="220.0" layoutY="64.0" promptText="Amount: " style="-fx-background-color: #E74C3C;" />
+      <DatePicker fx:id="saleDateDatePicker" layoutX="398.0" layoutY="64.0" promptText="Sale Date: " style="-fx-background-color: #E74C3C;" />
+      <Button layoutX="256.0" layoutY="110.0" mnemonicParsing="false" onAction="#handleLogSaleButton" prefHeight="37.0" prefWidth="89.0" style="-fx-background-color: #E74C3C;" text="Log Sale">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <TableView fx:id="salesIncomeTableView" layoutX="36.0" layoutY="174.0" prefHeight="200.0" prefWidth="550.0" style="-fx-background-color: #E74C3C;">
+        <columns>
+          <TableColumn fx:id="clientNameCol" prefWidth="175.0" text="Client Name" />
+          <TableColumn fx:id="amountCol" prefWidth="192.0" text="Amount" />
+            <TableColumn fx:id="dateCol" prefWidth="182.0" text="Date" />
+        </columns>
+      </TableView>
+      <Line endX="356.0" layoutX="256.0" layoutY="164.0" startX="-256.0" stroke="#e74c3c" strokeWidth="5.0" />
+      <Button layoutX="483.0" layoutY="383.0" mnemonicParsing="false" onAction="#handleHomeButton" prefHeight="25.0" prefWidth="61.0" style="-fx-background-color: #E74C3C;" text="Home">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+   </children>
 </AnchorPane>

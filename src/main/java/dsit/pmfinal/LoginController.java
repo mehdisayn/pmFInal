@@ -1,8 +1,10 @@
 package dsit.pmfinal;
 
 import dsit.pmfinal.meddy.utility.SceneSwitcher;
+import dsit.pmfinal.rrhin.AccSceneSwitch;
 import dsit.pmfinal.rrhin.RrhinSceneSwitch;
 import javafx.event.ActionEvent;
+import javafx.scene.AccessibleAction;
 import javafx.scene.Node;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
@@ -49,7 +51,13 @@ public class LoginController
             labelAlartRed.setText("Login Successful!");
 
             RrhinSceneSwitch.rrhinSceneSwitcher((Node)actionEvent.getSource(), "customer-dashboard.fxml", "Customer Dashboard");
-        }else {
+        }else if(username.equals("accountant") && password.equals("acc123")){
+            labelAlartRed.setText("Login Successful!");
+
+            AccSceneSwitch.accSceneSwitch((Node)actionEvent.getSource(), "accountant-dashboard.fxml", "Accountant Dashboard");
+
+        }
+        else {
             labelAlartRed.setText("Invalid username or password.");
         }
 

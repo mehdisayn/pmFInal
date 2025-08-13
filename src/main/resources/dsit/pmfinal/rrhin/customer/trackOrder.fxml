@@ -8,8 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="456.0" prefWidth="600.0" style="-fx-background-color: #36454F;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dsit.pmfinal.rrhin.customer.Controller.TrackOrderController">
+<AnchorPane prefHeight="469.0" prefWidth="614.0" style="-fx-background-color: #36454F;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dsit.pmfinal.rrhin.customer.Controller.TrackOrderController">
    <children>
       <Label layoutX="213.0" layoutY="14.0" text="Track Order " textFill="#e74c3c" underline="true">
          <font>
@@ -27,5 +26,6 @@
       <TextArea fx:id="orderDescriptionTextArea" editable="false" layoutX="17.0" layoutY="242.0" prefHeight="200.0" prefWidth="286.0" style="-fx-background-color: #E74C3C;" />
       <Button layoutX="388.0" layoutY="380.0" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="45.0" prefWidth="77.0" style="-fx-background-color: #E74C3C;" text="Back" textFill="WHITE" />
       <Button layoutX="488.0" layoutY="380.0" mnemonicParsing="false" onAction="#handleHomeButton" prefHeight="45.0" prefWidth="77.0" style="-fx-background-color: #E74C3C;" text="Home" textFill="WHITE" />
+      <Label alignment="CENTER" layoutX="-4.0" layoutY="455.0" prefHeight="17.0" prefWidth="621.0" style="-fx-background-color: white;" text="devSharkIT" />
    </children>
 </AnchorPane>

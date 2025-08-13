@@ -10,8 +10,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #36454F;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dsit.pmfinal.rrhin.accountant.Controller.SalaryReportsController">
+<AnchorPane prefHeight="414.0" prefWidth="603.0" style="-fx-background-color: #36454F;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dsit.pmfinal.rrhin.accountant.Controller.SalaryReportsController">
    <children>
       <Label layoutX="198.0" layoutY="14.0" text="Salary Reports" textFill="#e74c3c" underline="true">
          <font>
@@ -45,5 +44,6 @@
             <Font name="System Bold" size="12.0" />
          </font>
       </Button>
+      <Label alignment="CENTER" layoutY="406.0" prefHeight="17.0" prefWidth="614.0" style="-fx-background-color: white;" text="devSharkIT" />
    </children>
 </AnchorPane>

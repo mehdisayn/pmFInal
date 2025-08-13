@@ -28,5 +28,6 @@
             <Font name="Times New Roman" size="12.0" />
          </font>
       </Label>
+      <Label alignment="CENTER" layoutY="406.0" prefHeight="17.0" prefWidth="614.0" style="-fx-background-color: white;" text="devSharkIT" />
    </children>
 </AnchorPane>
