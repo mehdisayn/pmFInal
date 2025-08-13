@@ -10,41 +10,51 @@ public class AccountantDashboardController
 
     @javafx.fxml.FXML
     public void initialize() {
-    }
-
-    @javafx.fxml.FXML
-    public void handleSalaryManagementbutton(ActionEvent actionEvent) {
+        dashboardTextArea.setStyle("-fx-control-inner-background: #E74C3C;");
     }
 
     @javafx.fxml.FXML
     public void handleFinancialStatementsButton(ActionEvent actionEvent) {
+
     }
 
     @javafx.fxml.FXML
     public void handlePurchaseApprovalsButton(ActionEvent actionEvent) {
+
     }
 
     @javafx.fxml.FXML
     public void handleSignOutButton(ActionEvent actionEvent) {
+
     }
 
     @javafx.fxml.FXML
     public void handleInventoryValuationButton(ActionEvent actionEvent) {
+
     }
 
     @javafx.fxml.FXML
     public void handleReportButton(ActionEvent actionEvent) {
+
     }
 
     @javafx.fxml.FXML
     public void handleExpensesButton(ActionEvent actionEvent) {
+
     }
 
     @javafx.fxml.FXML
     public void handleTaxAndAuditRecordsButton(ActionEvent actionEvent) {
+
     }
 
     @javafx.fxml.FXML
-    public void handlesalesIncomeButton(ActionEvent actionEvent) {
+    public void handleSalaryManagementButton(ActionEvent actionEvent) {
+
+    }
+
+    @javafx.fxml.FXML
+    public void handleSalesIncomeButton(ActionEvent actionEvent) {
+
     }
 }

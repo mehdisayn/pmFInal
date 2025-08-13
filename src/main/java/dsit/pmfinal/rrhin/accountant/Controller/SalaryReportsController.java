@@ -16,7 +16,7 @@ public class SalaryReportsController
     @javafx.fxml.FXML
     private TableColumn dapermentCol;
     @javafx.fxml.FXML
-    private ComboBox selectComboBox;
+    private ComboBox <String> selectComboBox;
     @javafx.fxml.FXML
     private TextArea salaryReportsTextArea;
     @javafx.fxml.FXML
@@ -26,6 +26,18 @@ public class SalaryReportsController
 
     @javafx.fxml.FXML
     public void initialize() {
+        selectComboBox.getItems().addAll("January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October",
+                "November",
+                "December");
     }
 
     @javafx.fxml.FXML

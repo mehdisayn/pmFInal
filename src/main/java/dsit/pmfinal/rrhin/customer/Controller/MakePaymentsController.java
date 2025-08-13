@@ -1,5 +1,6 @@
 package dsit.pmfinal.rrhin.customer.Controller;
 
+import dsit.pmfinal.rrhin.customer.model.MakePayments;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -13,13 +14,13 @@ import java.io.IOException;
 public class MakePaymentsController
 {
     @javafx.fxml.FXML
-    private TableView makePayemtTableView;
+    private TableView <MakePayments> makePayemtTableView;
     @javafx.fxml.FXML
-    private TableColumn dueDateCol;
+    private TableColumn <MakePayments,String> dueDateCol;
     @javafx.fxml.FXML
-    private TableColumn amountCol;
+    private TableColumn <MakePayments,String> amountCol;
     @javafx.fxml.FXML
-    private TableColumn statusCol;
+    private TableColumn <MakePayments,String> statusCol;
     @javafx.fxml.FXML
     private ComboBox <String> selectPaymentMethodComboBox;
     @javafx.fxml.FXML
@@ -27,7 +28,7 @@ public class MakePaymentsController
     @javafx.fxml.FXML
     private TextArea errorTextArea;
     @javafx.fxml.FXML
-    private TableColumn orderIdCol;
+    private TableColumn <MakePayments,String> orderIdCol;
 
     @javafx.fxml.FXML
     public void initialize() {

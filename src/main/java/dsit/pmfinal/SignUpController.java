@@ -50,4 +50,9 @@ public class SignUpController
     @javafx.fxml.FXML
     public void handleTermsCheckBox(ActionEvent actionEvent) {
     }
+
+    @javafx.fxml.FXML
+    public void handleAlreadyHaveAnAccountButton(ActionEvent actionEvent) {
+        PrimarySceneSwitcher.primarySwitchScene((Node) actionEvent.getSource(),"login.fxml", "Login");
+    }
 }

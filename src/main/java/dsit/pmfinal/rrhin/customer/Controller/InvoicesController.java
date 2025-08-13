@@ -1,5 +1,6 @@
 package dsit.pmfinal.rrhin.customer.Controller;
 
+import dsit.pmfinal.rrhin.customer.model.Invoices;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -15,17 +16,17 @@ import java.io.IOException;
 public class InvoicesController
 {
     @javafx.fxml.FXML
-    private TableView invoicesAndPaymentTableView;
+    private TableView <Invoices> invoicesAndPaymentTableView;
     @javafx.fxml.FXML
-    private TableColumn amountCol;
+    private TableColumn <Invoices,String> amountCol;
     @javafx.fxml.FXML
-    private TableColumn dateCol;
+    private TableColumn <Invoices,String> dateCol;
     @javafx.fxml.FXML
-    private TableColumn paymentStatusCol;
+    private TableColumn <Invoices,String> paymentStatusCol;
     @javafx.fxml.FXML
     private TextArea descriptionTextArea;
     @javafx.fxml.FXML
-    private TableColumn orderIdCol;
+    private TableColumn <Invoices,String> orderIdCol;
 
     @javafx.fxml.FXML
     public void initialize() {
