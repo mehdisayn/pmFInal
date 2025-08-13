@@ -22,6 +22,7 @@ public class DashBoardController
 
     @javafx.fxml.FXML
     public void initialize() {
+        //dashboardTextArea
     }
 
     //fields of Scene Switch
@@ -34,7 +35,13 @@ public class DashBoardController
     }
 
     @javafx.fxml.FXML
-    public void handleEditProfileButton(ActionEvent actionEvent) {
+    public void handleEditProfileButton(ActionEvent actionEvent) throws IOException {
+        //PrimarySceneSwitcher.primarySwitchScene((Node)actionEvent.getSource(), "edit-profile.fxml" , "Edit Profile");
+        Parent root = FXMLLoader.load(getClass().getResource("/dsit/pmfinal/rrhin/customer/edit-profile.fxml"));
+        stage=(Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+        scene=new Scene(root);
+        stage.setScene(scene);
+        stage.setTitle("Edit Profile");
     }
 
     @javafx.fxml.FXML
@@ -64,11 +71,23 @@ public class DashBoardController
     }
 
     @javafx.fxml.FXML
-    public void handleMakePaymentButton(ActionEvent actionEvent) {
+    public void handleMakePaymentButton(ActionEvent actionEvent) throws IOException {
+        //PrimarySceneSwitcher.primarySwitchScene((Node)actionEvent.getSource(),"make-payment.fxml","Make Payment");
+        Parent root = FXMLLoader.load(getClass().getResource("/dsit/pmfinal/rrhin/customer/make-payments.fxml"));
+        stage=(Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+        scene=new Scene(root);
+        stage.setScene(scene);
+        stage.setTitle("Make Payments");
     }
 
     @javafx.fxml.FXML
-    public void handleRequestSampleButton(ActionEvent actionEvent) {
+    public void handleRequestSampleButton(ActionEvent actionEvent) throws IOException {
+        //PrimarySceneSwitcher.primarySwitchScene((Node)actionEvent.getSource(),"req-sample.fxml","Request Sample");
+        Parent root = FXMLLoader.load(getClass().getResource("/dsit/pmfinal/rrhin/customer/req-sample.fxml"));
+        stage=(Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+        scene=new Scene(root);
+        stage.setScene(scene);
+        stage.setTitle("Required Sample");
     }
 
     @javafx.fxml.FXML
@@ -81,7 +100,13 @@ public class DashBoardController
     }
 
     @javafx.fxml.FXML
-    public void handleSubmitComplaintButton(ActionEvent actionEvent) {
+    public void handleSubmitComplaintButton(ActionEvent actionEvent) throws IOException {
+        //PrimarySceneSwitcher.primarySwitchScene((Node)actionEvent.getSource(),"submit-complaint.fxml","Submit Complaint");
+        Parent root = FXMLLoader.load(getClass().getResource("/dsit/pmfinal/rrhin/customer/submit-complaint.fxml"));
+        stage=(Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+        scene=new Scene(root);
+        stage.setScene(scene);
+        stage.setTitle("Submit Complaint");
     }
 
     @Deprecated

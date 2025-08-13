@@ -7,7 +7,6 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #36454F;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dsit.pmfinal.rrhin.accountant.Controller.AccountantDashboardController">
    <children>
       <Label alignment="CENTER" contentDisplay="CENTER" layoutY="387.0" prefHeight="17.0" prefWidth="600.0" style="-fx-background-color: white;" text="devSharkIT" />
@@ -16,12 +15,12 @@
             <Font name="System Bold" size="30.0" />
          </font>
       </Label>
-      <Button layoutX="74.0" layoutY="73.0" mnemonicParsing="false" onAction="#handlesalesIncomeButton" prefHeight="34.0" prefWidth="139.0" style="-fx-background-color: #E74C3C;" text="Sales Income">
+      <Button layoutX="74.0" layoutY="73.0" mnemonicParsing="false" onAction="#handleSalesIncomeButton" prefHeight="34.0" prefWidth="139.0" style="-fx-background-color: #E74C3C;" text="Sales Income">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Button>
-      <Button layoutX="74.0" layoutY="116.0" mnemonicParsing="false" onAction="#handleSalaryManagementbutton" prefHeight="34.0" prefWidth="139.0" style="-fx-background-color: #E74C3C;" text="Salary Management">
+      <Button layoutX="74.0" layoutY="116.0" mnemonicParsing="false" onAction="#handleSalaryManagementButton" prefHeight="34.0" prefWidth="139.0" style="-fx-background-color: #E74C3C;" text="Salary Management">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>

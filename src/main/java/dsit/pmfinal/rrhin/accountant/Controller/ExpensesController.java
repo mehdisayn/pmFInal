@@ -20,17 +20,20 @@ public class ExpensesController
     @javafx.fxml.FXML
     private TableColumn categoryCol;
     @javafx.fxml.FXML
-    private ComboBox categoryComBobox;
+    private ComboBox <String> categoryComBobox;
 
     @javafx.fxml.FXML
     public void initialize() {
+
     }
 
     @javafx.fxml.FXML
     public void handleHomeButton(ActionEvent actionEvent) {
+
     }
 
     @javafx.fxml.FXML
     public void handleAddExpenseButton(ActionEvent actionEvent) {
+
     }
 }

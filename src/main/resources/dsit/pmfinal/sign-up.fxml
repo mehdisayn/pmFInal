@@ -24,12 +24,12 @@
             </Label>
             <Label layoutX="181.0" layoutY="100.0" text="Username :" textFill="WHITE" />
             <Label layoutX="181.0" layoutY="215.0" prefHeight="17.0" prefWidth="88.0" text="Password  :" textFill="WHITE" />
-            <Button layoutX="207.0" layoutY="321.0" mnemonicParsing="false" onAction="#handleCreateAnAccountButton" prefHeight="30.0" prefWidth="197.0" style="-fx-background-color: #E74C3C;" text="Create Customer Account" textFill="WHITE">
+            <Button layoutX="204.0" layoutY="296.0" mnemonicParsing="false" onAction="#handleCreateAnAccountButton" prefHeight="30.0" prefWidth="197.0" style="-fx-background-color: #E74C3C;" text="Create Customer Account" textFill="WHITE">
                 <font>
                     <Font name="System Bold" size="14.0" />
                 </font>
             </Button>
-            <Label layoutX="212.0" layoutY="295.0" prefHeight="17.0" prefWidth="176.0" text="If you don't have an account yet:" textFill="WHITE" />
+            <Label layoutX="207.0" layoutY="270.0" prefHeight="17.0" prefWidth="176.0" text="If you don't have an account yet:" textFill="WHITE" />
             <Label layoutX="411.0" layoutY="56.0" prefHeight="23.0" prefWidth="76.0" text="Since: 1969" textFill="PINK">
                 <font>
                     <Font name="System Bold" size="14.0" />
@@ -43,6 +43,11 @@
             <TextField fx:id="phoneTextField" layoutX="269.0" layoutY="173.0" prefHeight="25.0" prefWidth="161.0" />
             <Label fx:id="errorLabel" layoutX="435.0" layoutY="278.0" prefHeight="33.0" prefWidth="151.0" textFill="WHITE" />
             <PasswordField fx:id="passwordPasswordField" layoutX="269.0" layoutY="211.0" prefHeight="25.0" prefWidth="161.0" />
+            <Button layoutX="207.0" layoutY="339.0" mnemonicParsing="false" onAction="#handleAlreadyHaveAnAccountButton" prefHeight="30.0" prefWidth="187.0" style="-fx-background-color: #E74C3C;" text="Already Have an Account" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
         </children>
     </AnchorPane>
 </center>
