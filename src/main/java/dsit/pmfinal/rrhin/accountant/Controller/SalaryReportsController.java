@@ -1,26 +1,28 @@
 package dsit.pmfinal.rrhin.accountant.Controller;
 
+import dsit.pmfinal.rrhin.accountant.model.PurchaseApprovals;
+import dsit.pmfinal.rrhin.accountant.model.SalaryReports;
 import javafx.event.ActionEvent;
 import javafx.scene.control.*;
 
 public class SalaryReportsController
 {
     @javafx.fxml.FXML
-    private TableColumn idCol;
+    private TableColumn <SalaryReports,Integer> idCol;
     @javafx.fxml.FXML
-    private TableColumn salaryCol;
+    private TableColumn <SalaryReports,Double> salaryCol;
     @javafx.fxml.FXML
-    private TableColumn nameCol;
+    private TableColumn <SalaryReports,String> nameCol;
     @javafx.fxml.FXML
-    private TableView salaryReportsTableView;
+    private TableView <SalaryReports> salaryReportsTableView;
     @javafx.fxml.FXML
-    private TableColumn dapermentCol;
+    private TableColumn <SalaryReports,String> dapermentCol;
     @javafx.fxml.FXML
     private ComboBox <String> selectComboBox;
     @javafx.fxml.FXML
     private TextArea salaryReportsTextArea;
     @javafx.fxml.FXML
-    private TableColumn monthCol;
+    private TableColumn <PurchaseApprovals,String> monthCol;
     @javafx.fxml.FXML
     private Button handleGenReportButton;
 

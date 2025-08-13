@@ -1,5 +1,6 @@
 package dsit.pmfinal.meddy.ceo.controller;
 
+import dsit.pmfinal.meddy.ceo.model.ShiftApproval;
 import dsit.pmfinal.meddy.utility.SceneSwitcher;
 import javafx.event.ActionEvent;
 import javafx.scene.Node;
@@ -9,15 +10,15 @@ import javafx.scene.control.TableView;
 public class ShiftApprovalController
 {
     @javafx.fxml.FXML
-    private TableColumn columnStatus;
+    private TableColumn <ShiftApproval,String> columnStatus;
     @javafx.fxml.FXML
-    private TableView tableShiftRequests;
+    private TableView <ShiftApproval> tableShiftRequests;
     @javafx.fxml.FXML
-    private TableColumn columnShift;
+    private TableColumn <ShiftApproval,String> columnShift;
     @javafx.fxml.FXML
-    private TableColumn columnDate;
+    private TableColumn <ShiftApproval,String> columnDate;
     @javafx.fxml.FXML
-    private TableColumn columnReqBy;
+    private TableColumn <ShiftApproval,String> columnReqBy;
 
     @javafx.fxml.FXML
     public void initialize() {

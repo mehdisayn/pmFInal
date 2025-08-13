@@ -1,5 +1,6 @@
 package dsit.pmfinal.meddy.ceo.controller;
 
+import dsit.pmfinal.meddy.ceo.model.ProductionOverview;
 import dsit.pmfinal.meddy.utility.SceneSwitcher;
 import javafx.event.ActionEvent;
 import javafx.scene.Node;
@@ -10,17 +11,17 @@ import javafx.scene.control.TableView;
 public class ProductionOverviewController
 {
     @javafx.fxml.FXML
-    private TableColumn columnOutput;
+    private TableColumn <ProductionOverview,Integer> columnOutput;
     @javafx.fxml.FXML
-    private TableView tableProductionData;
+    private TableView <ProductionOverview> tableProductionData;
     @javafx.fxml.FXML
-    private TableColumn columnTarget;
+    private TableColumn <ProductionOverview,Integer> columnTarget;
     @javafx.fxml.FXML
-    private TableColumn columnShift;
+    private TableColumn <ProductionOverview,String> columnShift;
     @javafx.fxml.FXML
-    private TableColumn columnDefects;
+    private TableColumn <ProductionOverview,Integer> columnDefects;
     @javafx.fxml.FXML
-    private TableColumn columnDate;
+    private TableColumn <ProductionOverview,String> columnDate;
     @javafx.fxml.FXML
     private Label labelAvgOutput;
 

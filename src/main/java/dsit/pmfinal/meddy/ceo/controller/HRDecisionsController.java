@@ -1,5 +1,6 @@
 package dsit.pmfinal.meddy.ceo.controller;
 
+import dsit.pmfinal.meddy.ceo.model.HRDecisions;
 import dsit.pmfinal.meddy.utility.SceneSwitcher;
 import javafx.event.ActionEvent;
 import javafx.scene.Node;
@@ -9,15 +10,15 @@ import javafx.scene.control.TableView;
 public class HRDecisionsController
 {
     @javafx.fxml.FXML
-    private TableColumn columnJustification;
+    private TableColumn <HRDecisions,String> columnJustification;
     @javafx.fxml.FXML
-    private TableColumn columnPosition;
+    private TableColumn <HRDecisions,String> columnPosition;
     @javafx.fxml.FXML
-    private TableView tableHRRequests;
+    private TableView <HRDecisions> tableHRRequests;
     @javafx.fxml.FXML
-    private TableColumn columnAction;
+    private TableColumn <HRDecisions,String> columnAction;
     @javafx.fxml.FXML
-    private TableColumn columnName;
+    private TableColumn <HRDecisions,String> columnName;
 
     @javafx.fxml.FXML
     public void initialize() {

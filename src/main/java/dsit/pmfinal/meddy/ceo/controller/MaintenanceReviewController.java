@@ -1,5 +1,6 @@
 package dsit.pmfinal.meddy.ceo.controller;
 
+import dsit.pmfinal.meddy.ceo.model.MaintenanceReview;
 import dsit.pmfinal.meddy.utility.SceneSwitcher;
 import javafx.event.ActionEvent;
 import javafx.scene.Node;
@@ -10,17 +11,17 @@ import javafx.scene.control.TableView;
 public class MaintenanceReviewController
 {
     @javafx.fxml.FXML
-    private TableColumn columnMachineID;
+    private TableColumn <MaintenanceReview,Integer> columnMachineID;
     @javafx.fxml.FXML
-    private TableColumn columnActionTaken;
+    private TableColumn <MaintenanceReview,String> columnActionTaken;
     @javafx.fxml.FXML
     private Label labelUrgentCount;
     @javafx.fxml.FXML
-    private TableView tableMaintenanceReports;
+    private TableView <MaintenanceReview> tableMaintenanceReports;
     @javafx.fxml.FXML
-    private TableColumn columnIssue;
+    private TableColumn <MaintenanceReview,String> columnIssue;
     @javafx.fxml.FXML
-    private TableColumn columnDate;
+    private TableColumn <MaintenanceReview,String>columnDate;
 
     @javafx.fxml.FXML
     public void initialize() {
