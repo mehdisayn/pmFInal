@@ -31,6 +31,7 @@ public class HRDecisionsController
 
     @javafx.fxml.FXML
     public void btnRejectHRAction(ActionEvent actionEvent) {
+
     }
 
     @javafx.fxml.FXML

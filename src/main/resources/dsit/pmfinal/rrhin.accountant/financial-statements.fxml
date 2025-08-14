@@ -5,42 +5,39 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
-<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #36454F;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dsit.pmfinal.rrhin.accountant.Controller.FinancialStatementsController">
    <children>
-      <Label layoutX="38.0" layoutY="14.0" text="Financial Statements &amp; Profit/Loss Reports" textFill="#e74c3c" underline="true">
+      <Label layoutX="187.0" layoutY="14.0" text="Financial Statements" textFill="#e74c3c" underline="true">
          <font>
             <Font name="System Bold" size="26.0" />
          </font>
       </Label>
-      <TableView fx:id="financialStatementTableView" layoutX="21.0" layoutY="68.0" prefHeight="138.0" prefWidth="561.0" style="-fx-background-color: E74C3C;">
-        <columns>
-          <TableColumn fx:id="categoryCol" prefWidth="176.0" text="Category" />
-          <TableColumn fx:id="amountCol" prefWidth="203.0" text="Amount" />
-            <TableColumn fx:id="typeCol" prefWidth="181.0" text="Type" />
-        </columns>
-      </TableView>
-      <Line endX="298.0" layoutX="302.0" layoutY="228.0" startX="-302.0" stroke="#e74c3c" strokeWidth="5.0" />
-      <ComboBox fx:id="selectMonthComboBox" layoutX="21.0" layoutY="248.0" prefHeight="25.0" prefWidth="200.0" promptText="Select Month" style="-fx-background-color: E74C3C;" />
-      <TextArea fx:id="profitLossTextArea" layoutX="248.0" layoutY="248.0" prefHeight="138.0" prefWidth="200.0" style="-fx-background-color: E74C3C;" />
-      <Button layoutX="49.0" layoutY="294.0" mnemonicParsing="false" onAction="#handleGenStatementButton" prefHeight="38.0" prefWidth="145.0" style="-fx-background-color: E74C3C;" text="Generate Statement">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Button>
-      <Button layoutX="49.0" layoutY="346.0" mnemonicParsing="false" onAction="#handleExportPDFButton" prefHeight="38.0" prefWidth="145.0" style="-fx-background-color: E74C3C;" text="Export PDF">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Button>
+      <Line endX="298.0" layoutX="303.0" layoutY="174.0" startX="-302.0" stroke="#e74c3c" strokeWidth="5.0" />
       <Button layoutX="505.0" layoutY="353.0" mnemonicParsing="false" onAction="#handleHomeButton" style="-fx-background-color: E74C3C;" text="Home">
          <font>
             <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="statementTypeComboBox" layoutX="37.0" layoutY="61.0" prefWidth="150.0" promptText="Statement Type" style="-fx-background-color: #E74C3C;" />
+      <ComboBox fx:id="selectPeriodComboBox" layoutX="414.0" layoutY="61.0" prefWidth="150.0" promptText="Select Period" style="-fx-background-color: #E74C3C;" />
+      <Button layoutX="237.0" layoutY="107.0" mnemonicParsing="false" onAction="#handleGenStatementButton" prefHeight="39.0" prefWidth="129.0" style="-fx-background-color: #E74C3C;" text="Generate Statement">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <TableView fx:id="financialStatementTableView" layoutX="19.0" layoutY="186.0" prefHeight="200.0" prefWidth="395.0" style="-fx-background-color: #E74C3C;">
+        <columns>
+          <TableColumn fx:id="itemCol" prefWidth="186.0" text="Item" />
+          <TableColumn fx:id="amountCol" prefWidth="208.0" text="Amount" />
+        </columns>
+      </TableView>
+      <Button layoutX="464.0" layoutY="247.0" mnemonicParsing="false" onAction="#handleDownloadButton" prefHeight="39.0" prefWidth="129.0" style="-fx-background-color: #E74C3C;" text="Download">
+         <font>
+            <Font name="System Bold" size="13.0" />
          </font>
       </Button>
    </children>
