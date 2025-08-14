@@ -1,5 +1,6 @@
 package dsit.pmfinal;
 
+import dsit.pmfinal.common_files.Jumper;
 import dsit.pmfinal.meddy.utility.SceneSwitcher;
 import dsit.pmfinal.rrhin.RrhinSceneSwitch;
 import javafx.event.ActionEvent;
@@ -52,18 +53,33 @@ public class LoginController
             return;
         }
         // For demo purposes, we are using hardcoded credentials
+
+        // CEO
         if (username.equals("ceo") && password.equals("ceo123")) {
             labelAlartRed.setText("Login successful!");
-
+            //Jumper.jump((Node)actionEvent.getSource(),"meddy/ceo", "ceo-dashboard.fxml", "CEO Dashboard");
             SceneSwitcher.switchScene((Node) actionEvent.getSource(), "ceo", "ceo-dashboard.fxml", "Dashboard");
+        //Factory Manager
+        } else if (username.equals("factorymanager")&& password.equals("facman123")) {
+            labelAlartRed.setText("Login Successfull!");
+            SceneSwitcher.switchScene((Node)actionEvent.getSource(), "factorymanager", "factory-manager-dashboard.fxml", "Factory Manager Dashboard");
+
+        //Customer
         }else if(username.equals("customer")&& password.equals("cus123")){
             labelAlartRed.setText("Login Successful!");
 
             RrhinSceneSwitch.rrhinSceneSwitcher((Node)actionEvent.getSource(), "customer-dashboard.fxml", "Customer Dashboard");
+
+        //Accountant
         }else if(username.equals("accountant") && password.equals("acc123")) {
             labelAlartRed.setText("Login Successful!");
 
-            RrhinSceneSwitch.rrhinSceneSwitcher((Node)actionEvent.getSource(),"accountant-dashboard.fxml","Accountant Dashboard");
+            Jumper.jump((Node)actionEvent.getSource(), "rrhin.accountant", "accountant-dashboard.fxml", "Accountant Dashboard");
+
+
+
+
+//            RrhinSceneSwitch.rrhinSceneSwitcher((Node)actionEvent.getSource(),"accountant-dashboard.fxml","Accountant Dashboard");
 //            Parent root = FXMLLoader.load(getClass().getResource("/dsit/pmfinal/rrhin/accountant/accountant-dashboard.fxml"));
 //            stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
 //            scene = new Scene(root);
