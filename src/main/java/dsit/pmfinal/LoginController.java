@@ -55,7 +55,7 @@ public class LoginController
         if (username.equals("ceo") && password.equals("ceo123")) {
             labelAlartRed.setText("Login successful!");
 
-            SceneSwitcher.switchScene((Node) actionEvent.getSource(), "ceo-dashboard.fxml", "Dashboard");
+            SceneSwitcher.switchScene((Node) actionEvent.getSource(), "ceo", "ceo-dashboard.fxml", "Dashboard");
         }else if(username.equals("customer")&& password.equals("cus123")){
             labelAlartRed.setText("Login Successful!");
 

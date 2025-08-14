@@ -1,5 +1,9 @@
 package dsit.pmfinal.meddy.factoryManager;
 
+import javafx.event.ActionEvent;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+
 public class SafetyProtocolsController
 {
 

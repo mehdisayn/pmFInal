@@ -17,7 +17,9 @@ public class CeoDashboardController
 
     @javafx.fxml.FXML
     public void btnViewProduction(ActionEvent actionEvent) {
-        SceneSwitcher.switchScene((Node) actionEvent.getSource(), "production-overview.fxml", "Production Overview");
+      //  SceneSwitcher.switchScene((Node) actionEvent.getSource(), "production-overview.fxml", "Production Overview");
+        SceneSwitcher.switchScene((Node) actionEvent.getSource(), "ceo", "production-overview.fxml", "Production Overview");
+
     }
 
     @javafx.fxml.FXML
@@ -28,37 +30,37 @@ public class CeoDashboardController
 
     @javafx.fxml.FXML
     public void btnDepartmentPerformance(ActionEvent actionEvent) {
-        SceneSwitcher.switchScene((Node) actionEvent.getSource(), "department-overview.fxml", "Department Overview");
+        SceneSwitcher.switchScene((Node) actionEvent.getSource(),"ceo", "department-overview.fxml", "Department Overview");
     }
 
     @javafx.fxml.FXML
     public void btnApproveShifts(ActionEvent actionEvent) {
-        SceneSwitcher.switchScene((Node) actionEvent.getSource(), "shift-approval.fxml", "Shift Approval");
+        SceneSwitcher.switchScene((Node) actionEvent.getSource(), "ceo", "shift-approval.fxml", "Shift Approval");
     }
 
     @javafx.fxml.FXML
     public void btnReviewMaintenance(ActionEvent actionEvent) {
-        SceneSwitcher.switchScene((Node) actionEvent.getSource(), "maintenance-review.fxml", "Maintenance Review");
+        SceneSwitcher.switchScene((Node) actionEvent.getSource(), "ceo", "maintenance-review.fxml", "Maintenance Review");
     }
 
 
     @javafx.fxml.FXML
     public void btnReviewHRDecisions(ActionEvent actionEvent) {
-        SceneSwitcher.switchScene((Node) actionEvent.getSource(), "hr-decisions.fxml", "HR Decisions");
+        SceneSwitcher.switchScene((Node) actionEvent.getSource(), "ceo", "hr-decisions.fxml", "HR Decisions");
     }
 
     @javafx.fxml.FXML
     public void btnApproveBudget(ActionEvent actionEvent) {
-        SceneSwitcher.switchScene((Node) actionEvent.getSource(), "budget-approval.fxml", "Budget Approval");
+        SceneSwitcher.switchScene((Node) actionEvent.getSource(), "ceo", "budget-approval.fxml", "Budget Approval");
     }
 
     @javafx.fxml.FXML
     public void btnApproveSalaries(ActionEvent actionEvent) {
-        SceneSwitcher.switchScene((Node) actionEvent.getSource(), "salary-approval.fxml", "Salary Approval");
+        SceneSwitcher.switchScene((Node) actionEvent.getSource(), "ceo", "salary-approval.fxml", "Salary Approval");
     }
 
     @javafx.fxml.FXML
     public void btnStrategicPlanning(ActionEvent actionEvent) {
-        SceneSwitcher.switchScene((Node) actionEvent.getSource(), "strategic-planning.fxml", "Strategic Planning");
+        SceneSwitcher.switchScene((Node) actionEvent.getSource(), "ceo", "strategic-planning.fxml", "Strategic Planning");
     }
 }

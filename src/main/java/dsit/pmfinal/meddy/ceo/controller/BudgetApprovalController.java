@@ -27,7 +27,7 @@ public class BudgetApprovalController
 
     @javafx.fxml.FXML
     public void btnBack(ActionEvent actionEvent) {
-        SceneSwitcher.switchScene((Node) actionEvent.getSource(), "ceo-dashboard.fxml", "CEO Dashboard");
+        SceneSwitcher.switchScene((Node) actionEvent.getSource(), "ceo", "ceo-dashboard.fxml", "CEO Dashboard");
     }
 
     @javafx.fxml.FXML

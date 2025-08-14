@@ -10,9 +10,9 @@ import java.io.IOException;
 
 public class SceneSwitcher {
 
-    public static void switchScene(Node sourceNode, String fxmlFileName, String title) {
+    public static void switchScene(Node sourceNode,String userName, String fxmlFileName, String title) {
         try {
-            FXMLLoader loader = new FXMLLoader(dsit.pmfinal.meddy.utility.SceneSwitcher.class.getResource("/dsit/pmfinal/meddy/ceo/" + fxmlFileName));
+            FXMLLoader loader = new FXMLLoader(dsit.pmfinal.meddy.utility.SceneSwitcher.class.getResource("/dsit/pmfinal/meddy/"+ userName +"/"+ fxmlFileName));
             Parent root = loader.load();
 
             Stage stage = (Stage) sourceNode.getScene().getWindow();
