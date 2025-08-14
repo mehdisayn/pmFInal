@@ -45,13 +45,14 @@ public class LoginController
 
     @javafx.fxml.FXML
     public void butLogin(ActionEvent actionEvent) throws IOException {
-        // for show
+        // Validate input fields
         String username = textFieldUsername.getText().trim();
         String password = pswFieldPassword.getText().trim();
         if (username.isEmpty() || password.isEmpty()) {
             labelAlartRed.setText("Please fill out all fields.");
             return;
         }
+
         // For demo purposes, we are using hardcoded credentials
 
         // CEO
@@ -76,15 +77,6 @@ public class LoginController
 
             Jumper.jump((Node)actionEvent.getSource(), "rrhin.accountant", "accountant-dashboard.fxml", "Accountant Dashboard");
 
-
-
-
-//            RrhinSceneSwitch.rrhinSceneSwitcher((Node)actionEvent.getSource(),"accountant-dashboard.fxml","Accountant Dashboard");
-//            Parent root = FXMLLoader.load(getClass().getResource("/dsit/pmfinal/rrhin/accountant/accountant-dashboard.fxml"));
-//            stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
-//            scene = new Scene(root);
-//            stage.setScene(scene);
-//            stage.setTitle("Accountant Dashboard");
         }else {
             labelAlartRed.setText("Invalid username or password.");
         }
