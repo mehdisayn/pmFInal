@@ -63,7 +63,7 @@ public class LoginController
         }else if(username.equals("accountant") && password.equals("acc123")) {
             labelAlartRed.setText("Login Successful!");
 
-            //RrhinSceneSwitch.rrhinSceneSwitcher((Node)actionEvent.getSource(),"accountant-dashboard.fxml","Accountant Dashboard");
+            RrhinSceneSwitch.rrhinSceneSwitcher((Node)actionEvent.getSource(),"accountant-dashboard.fxml","Accountant Dashboard");
 //            Parent root = FXMLLoader.load(getClass().getResource("/dsit/pmfinal/rrhin/accountant/accountant-dashboard.fxml"));
 //            stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
 //            scene = new Scene(root);
