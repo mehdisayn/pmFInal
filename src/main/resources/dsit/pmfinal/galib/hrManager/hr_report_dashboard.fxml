@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="383.0" prefWidth="610.0" style="-fx-background-color: #36454F;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dsit.pmfinal.galib.hrManager.HrReportDashboardController">
+    <children>
+        <Label layoutX="14.0" layoutY="15.0" prefHeight="51.0" prefWidth="172.0" text="CEO" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="36.0" />
+            </font>
+        </Label>
+        <Label layoutX="17.0" layoutY="66.0" prefHeight="25.0" prefWidth="128.0" text="HR Decisions" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="278.0" layoutY="14.0" prefHeight="52.0" prefWidth="308.0" text="The Pulp Fiction Co." textAlignment="CENTER" textFill="PINK">
+            <font>
+                <Font name="System Bold" size="36.0" />
+            </font>
+        </Label>
+        <Label layoutX="164.0" layoutY="147.0" text="From" textFill="WHITE" />
+        <Label layoutX="164.0" layoutY="183.0" prefWidth="14.0" text="To" textFill="WHITE" />
+        <Label layoutX="17.0" layoutY="232.0" text="Select report type" textFill="WHITE" />
+        <Button layoutX="472.0" layoutY="228.0" mnemonicParsing="false" text="Generate report" />
+        <Label layoutX="216.0" layoutY="114.0" text="Section Title" textFill="WHITE" />
+        <DatePicker layoutX="216.0" layoutY="143.0" />
+        <ComboBox layoutX="120.0" layoutY="228.0" prefHeight="26.0" prefWidth="175.0" />
+        <DatePicker layoutX="216.0" layoutY="179.0" />
+
+        <Button layoutX="470.0" layoutY="321.0" mnemonicParsing="false" onAction="#btnBack" prefHeight="19.0" prefWidth="105.0" style="-fx-background-color: #E74C3C;" text="Back" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Button>
+        <Label layoutX="17.0" layoutY="327.0" text="Enter goal " textFill="WHITE" />
+        <Label fx:id="labelEfficiency" layoutX="184.0" layoutY="307.0" prefHeight="25.0" prefWidth="182.0" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="18.0" layoutY="364.0" stroke="BLACK" strokeType="INSIDE" width="610.0" />
+        <Label layoutX="275.0" layoutY="364.0" text="DevSharkIT" />
+    </children>
+</AnchorPane>

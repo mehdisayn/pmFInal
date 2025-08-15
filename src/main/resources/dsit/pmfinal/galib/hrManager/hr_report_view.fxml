@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="383.0" prefWidth="610.0" style="-fx-background-color: #36454F; -fx-border-color: white;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dsit.pmfinal.galib.hrManager.HrReportViewController">
+    <children>
+        <Label layoutX="14.0" layoutY="15.0" prefHeight="51.0" prefWidth="172.0" text="Hr Manger" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="36.0" />
+            </font>
+        </Label>
+        <Label layoutX="17.0" layoutY="66.0" prefHeight="25.0" prefWidth="128.0" text="Hr Report" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="278.0" layoutY="14.0" prefHeight="52.0" prefWidth="308.0" text="The Pulp Fiction Co." textAlignment="CENTER" textFill="PINK">
+            <font>
+                <Font name="System Bold" size="36.0" />
+            </font>
+        </Label>
+        <TableView layoutX="17.0" layoutY="103.0" prefHeight="150.0" prefWidth="298.0">
+            <columns>
+                <TableColumn prefWidth="38.399993896484375" text="Employee ID" />
+                <TableColumn prefWidth="42.39999008178711" text="Employee Name" />
+            <TableColumn prefWidth="42.399993896484375" text="Depertment " />
+            <TableColumn prefWidth="44.0" text="Leave Taken" />
+            <TableColumn prefWidth="44.0" text="Salary" />
+            <TableColumn prefWidth="45.60002136230469" text="Performance Score" />
+            <TableColumn prefWidth="42.4000244140625" text="Report date" />
+            </columns>
+        </TableView>
+        <BarChart layoutX="334.0" layoutY="103.0" prefHeight="150.0" prefWidth="245.0" style="-fx-background-color: #6cdfff; -fx-border-color: WHITE;">
+            <xAxis>
+                <CategoryAxis side="BOTTOM" />
+            </xAxis>
+            <yAxis>
+                <NumberAxis side="LEFT" />
+            </yAxis>
+        </BarChart>
+        <Button layoutX="467.0" layoutY="267.0" mnemonicParsing="false" text="back" />
+        <Button layoutX="523.0" layoutY="267.0" mnemonicParsing="false" text="Update" />
+        <Label layoutX="487.0" layoutY="57.0" text="BarChart" />
+        <Button layoutX="474.0" layoutY="311.0" mnemonicParsing="false" onAction="#btnBack" prefHeight="19.0" prefWidth="105.0" style="-fx-background-color: #E74C3C;" text="Back" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Button>
+        <Label layoutX="17.0" layoutY="327.0" text="Enter goal " textFill="WHITE" />
+        <Label fx:id="labelEfficiency" layoutX="187.0" layoutY="299.0" prefHeight="25.0" prefWidth="182.0" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="18.0" layoutY="364.0" stroke="BLACK" strokeType="INSIDE" width="610.0" />
+        <Label layoutX="275.0" layoutY="364.0" text="DevSharkIT" />
+    </children>
+</AnchorPane>
