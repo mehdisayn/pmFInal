@@ -5,23 +5,11 @@ public class Budget {
     private String department;
     private String justification;
     private double proposedBudget;
-    private double totalRequested;
 
-    public Budget(String department, String justification, double proposedBudget, double totalRequested) {
+    public Budget(String department, String justification, double proposedBudget) {
         this.department = department;
         this.justification = justification;
         this.proposedBudget = proposedBudget;
-        this.totalRequested = totalRequested;
-    }
-
-    public void approveBudget() {
-        // Logic to approve the budget
-        System.out.println("Budget for " + department + " approved with amount: " + proposedBudget);
-    }
-
-    public void rejectBudget() {
-        // Logic to reject the budget
-        System.out.println("Budget for " + department + " rejected.");
     }
 
 
@@ -52,13 +40,7 @@ public class Budget {
         this.proposedBudget = proposedBudget;
     }
 
-    public double getTotalRequested() {
-        return totalRequested;
-    }
 
-    public void setTotalRequested(double totalRequested) {
-        this.totalRequested = totalRequested;
-    }
 
     @Override
     public String toString() {
@@ -66,7 +48,7 @@ public class Budget {
                 "department='" + department + '\'' +
                 ", justification='" + justification + '\'' +
                 ", proposedBudget=" + proposedBudget +
-                ", totalRequested=" + totalRequested +
+                ", totalRequested=" +
                 '}';
     }
 }

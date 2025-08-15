@@ -58,6 +58,7 @@ public class Ceo extends User {
     // 3️⃣ Approve budget proposed by Accountant
     public void approveBudget(double budgetAmount) {
         if (budgetAmount > 0) {
+
             this.approvedBudget = budgetAmount;
             System.out.println("Approved budget: $" + budgetAmount);
         } else {
