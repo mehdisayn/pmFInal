@@ -7,6 +7,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -28,11 +29,16 @@ public class MakePaymentsController
     @javafx.fxml.FXML
     private TextArea errorTextArea;
     @javafx.fxml.FXML
-    private TableColumn <MakePayments,Double> orderIdCol;
+    private TableColumn <MakePayments,String> orderIdCol;
 
     @javafx.fxml.FXML
     public void initialize() {
         errorTextArea.setStyle("-fx-text-fill: black; -fx-control-inner-background: #E74C3C;");
+
+        orderIdCol.setCellValueFactory(new PropertyValueFactory<MakePayments,String>("Order Id"));
+        amountCol.setCellValueFactory(new PropertyValueFactory<MakePayments,Double>("Amount"));
+        dueDateCol.setCellValueFactory(new PropertyValueFactory<MakePayments,String>("Due Date"));
+        statusCol.setCellValueFactory(new PropertyValueFactory<MakePayments,String>("Status"));
 
         selectPaymentMethodComboBox.getItems().addAll("bKash",
                 "Nagad",
