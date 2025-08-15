@@ -23,8 +23,6 @@ public class SalaryReportsController
     private TextArea salaryReportsTextArea;
     @javafx.fxml.FXML
     private TableColumn <PurchaseApprovals,String> monthCol;
-    @javafx.fxml.FXML
-    private Button handleGenReportButton;
 
     @javafx.fxml.FXML
     public void initialize() {
