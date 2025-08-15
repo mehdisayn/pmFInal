@@ -1,5 +1,8 @@
 package dsit.pmfinal.hares.maintenanceOfficer;
 
+import javafx.event.ActionEvent;
+import javafx.scene.control.TableColumn;
+
 public class ScheduleMaintenanceController
 {
     @javafx.fxml.FXML

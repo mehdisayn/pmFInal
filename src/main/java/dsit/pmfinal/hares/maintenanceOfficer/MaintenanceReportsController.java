@@ -1,5 +1,7 @@
 package dsit.pmfinal.hares.maintenanceOfficer;
 
+import javafx.event.ActionEvent;
+
 public class MaintenanceReportsController
 {
     @javafx.fxml.FXML

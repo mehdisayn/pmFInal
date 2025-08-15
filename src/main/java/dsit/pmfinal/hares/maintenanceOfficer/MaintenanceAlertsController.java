@@ -1,5 +1,9 @@
 package dsit.pmfinal.hares.maintenanceOfficer;
 
+import javafx.event.ActionEvent;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.TextField;
+
 public class MaintenanceAlertsController
 {
     @javafx.fxml.FXML

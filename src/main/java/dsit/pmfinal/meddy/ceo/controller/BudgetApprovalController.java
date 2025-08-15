@@ -8,6 +8,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.scene.Node;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
@@ -15,8 +16,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 
 import static javafx.collections.FXCollections.observableArrayList;
 
-public class BudgetApprovalController
-{
+public class BudgetApprovalController {
     @javafx.fxml.FXML
     private TableColumn <Budget, String> columnDept;
     @javafx.fxml.FXML
@@ -27,6 +27,12 @@ public class BudgetApprovalController
     private Label labelTotalRequested;
     @javafx.fxml.FXML
     private TableColumn <Budget, Double>columnProposedBudget;
+    @javafx.fxml.FXML
+    private ComboBox<String> comboboxObs;
+    @javafx.fxml.FXML
+    private TableColumn<Budget, String> columnObs;
+    @javafx.fxml.FXML
+    private TableColumn<Budget, String> columnStatus;
 
 
     // Dummy list of budget proposals for demonstration purposes
@@ -36,17 +42,25 @@ public class BudgetApprovalController
 
     @javafx.fxml.FXML
     public void initialize() {
-
         // Initialize the dummy table columns
-        budgetProposals.add(new Budget("Marketing", "Increase brand awareness", 50000));
-        budgetProposals.add(new Budget("Research", "New product development", 75000));
-        budgetProposals.add(new Budget("Operations", "Efficiency improvements", 30000));
+
+        budgetProposals.add(new Budget("756","Marketing", "Increase brand awareness", 50000, "Pending"));
+        budgetProposals.add(new Budget("212","Research", "New product development", 75000, "Pending"));
+        budgetProposals.add(new Budget("345","Operations", "Efficiency improvements", 30000, "Pending"));
 
 
 
+        columnObs.setCellValueFactory(new PropertyValueFactory<>("obs"));
         columnDept.setCellValueFactory(new PropertyValueFactory<>("department"));
         columnJustification.setCellValueFactory(new PropertyValueFactory<>("justification"));
         columnProposedBudget.setCellValueFactory(new PropertyValueFactory<>("proposedBudget"));
+        columnStatus.setCellValueFactory(new PropertyValueFactory<>("status"));
+
+
+
+        // Initialize the combobox with dummy data
+        comboboxObs.setItems(observableArrayList("756", "212", "345"));
+
 
 
         for (Budget budget : budgetProposals) {
@@ -67,10 +81,37 @@ public class BudgetApprovalController
     public void btnApprove(ActionEvent actionEvent) {
 
 
+         //when i select combobox obs and press approve, it will calculate the total requested budget only for that Obs and display it in the label
+        // and also change the status of the budget proposals to "Approved"
+
+        String selectedObs = comboboxObs.getValue();
+        if (selectedObs != null) {
+            double total = 0;
+            total += budgetProposals.stream()
+                    .filter(b -> selectedObs.equals(b.getObs()))
+                    .mapToDouble(Budget::getProposedBudget)
+                    .sum();
+
+            labelTotalRequested.setText(total + " bdt");
+            budgetProposals.stream()
+                    .filter(b -> selectedObs.equals(b.getObs()))
+                    .forEach(b -> b.setStatus("Approved"));
+            tableBudgetProposals.refresh(); // Refresh the table to show updated status
+
+
+            //save approved budget to database
+        }
 
     }
 
     @javafx.fxml.FXML
     public void btnReject(ActionEvent actionEvent) {
+        String selectedObs = comboboxObs.getValue();
+        if (selectedObs != null) {
+            budgetProposals.stream()
+                    .filter(b -> selectedObs.equals(b.getObs()))
+                    .forEach(b -> b.setStatus("Rejected"));
+            tableBudgetProposals.refresh();
+        }
     }
 }
