@@ -6,6 +6,7 @@ import javafx.scene.control.DatePicker;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import javafx.scene.control.cell.PropertyValueFactory;
 
 public class SalesIncomeController
 {
@@ -26,6 +27,10 @@ public class SalesIncomeController
 
     @javafx.fxml.FXML
     public void initialize() {
+        clientNameCol.setCellValueFactory(new PropertyValueFactory<SalesIncome,String>("Client Name"));
+        amountCol.setCellValueFactory(new PropertyValueFactory<SalesIncome,Double>("Amount"));
+        dateCol.setCellValueFactory(new PropertyValueFactory<SalesIncome,String>("Date"));
+
     }
 
     @javafx.fxml.FXML

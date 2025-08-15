@@ -5,6 +5,7 @@ import javafx.event.ActionEvent;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextArea;
+import javafx.scene.control.cell.PropertyValueFactory;
 
 public class PurchaseApprovalsController
 {
@@ -25,6 +26,11 @@ public class PurchaseApprovalsController
 
     @javafx.fxml.FXML
     public void initialize() {
+        itemNameCol.setCellValueFactory(new PropertyValueFactory<PurchaseApprovals,String>("Item Name"));
+        amountCol.setCellValueFactory(new PropertyValueFactory<PurchaseApprovals,Double>("Amount"));
+        departmentCol.setCellValueFactory(new PropertyValueFactory<PurchaseApprovals,String>("Department"));
+        requestIdCol.setCellValueFactory(new PropertyValueFactory<PurchaseApprovals,Integer>("Request ID"));
+        statusCol.setCellValueFactory(new PropertyValueFactory<PurchaseApprovals,String>("Status"));
     }
 
     @javafx.fxml.FXML
