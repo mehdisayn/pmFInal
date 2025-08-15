@@ -1,6 +1,7 @@
 package dsit.pmfinal.rrhin.customer.Controller;
 
 import dsit.pmfinal.rrhin.customer.model.Invoices;
+import dsit.pmfinal.rrhin.customer.model.MakePayments;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -9,6 +10,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextArea;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -30,6 +32,7 @@ public class InvoicesController
 
     @javafx.fxml.FXML
     public void initialize() {
+
     }
 
     //fields of Scene Switch
