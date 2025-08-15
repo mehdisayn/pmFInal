@@ -1,6 +1,6 @@
 package dsit.pmfinal.meddy.ceo.controller;
 
-import dsit.pmfinal.meddy.ceo.model.StrategicPlanning;
+
 import dsit.pmfinal.meddy.utility.SceneSwitcher;
 import javafx.event.ActionEvent;
 import javafx.scene.Node;
@@ -14,19 +14,19 @@ public class StrategicPlanningController
     @javafx.fxml.FXML
     private TextArea txtStrategyNotes;
     @javafx.fxml.FXML
-    private TableColumn <StrategicPlanning, String> quarterColumn;
+    private TableColumn quarterColumn;
     @javafx.fxml.FXML
-    private TableColumn <StrategicPlanning,String> summaryColumn;
+    private TableColumn summaryColumn;
     @javafx.fxml.FXML
     private ComboBox <String> comboDepartment;
     @javafx.fxml.FXML
-    private TableColumn <StrategicPlanning,String> departmentColumn;
+    private TableColumn departmentColumn;
     @javafx.fxml.FXML
-    private TableColumn <StrategicPlanning,String> dateColumn;
+    private TableColumn dateColumn;
     @javafx.fxml.FXML
     private ComboBox <String> comboQuarter;
     @javafx.fxml.FXML
-    private TableView <StrategicPlanning> tableStrategyRecords;
+    private TableView tableStrategyRecords;
 
     @javafx.fxml.FXML
     public void initialize() {

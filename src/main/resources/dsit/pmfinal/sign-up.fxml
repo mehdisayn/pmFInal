@@ -4,6 +4,7 @@
 <?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
@@ -22,32 +23,34 @@
                     <Font name="System Bold" size="36.0" />
                 </font>
             </Label>
-            <Label layoutX="181.0" layoutY="100.0" text="Username :" textFill="WHITE" />
-            <Label layoutX="181.0" layoutY="215.0" prefHeight="17.0" prefWidth="88.0" text="Password  :" textFill="WHITE" />
-            <Button layoutX="204.0" layoutY="296.0" mnemonicParsing="false" onAction="#handleCreateAnAccountButton" prefHeight="30.0" prefWidth="197.0" style="-fx-background-color: #E74C3C;" text="Create Customer Account" textFill="WHITE">
+            <Label layoutX="23.0" layoutY="100.0" text="userame :" textFill="WHITE" />
+            <Label layoutX="23.0" layoutY="215.0" prefHeight="17.0" prefWidth="88.0" text="Password  :" textFill="WHITE" />
+            <Button layoutX="213.0" layoutY="291.0" mnemonicParsing="false" onAction="#handleCreateAnAccountButton" prefHeight="30.0" prefWidth="197.0" style="-fx-background-color: #E74C3C;" text="Create Customer Account" textFill="WHITE">
                 <font>
                     <Font name="System Bold" size="14.0" />
                 </font>
             </Button>
-            <Label layoutX="207.0" layoutY="270.0" prefHeight="17.0" prefWidth="176.0" text="If you don't have an account yet:" textFill="WHITE" />
             <Label layoutX="411.0" layoutY="56.0" prefHeight="23.0" prefWidth="76.0" text="Since: 1969" textFill="PINK">
                 <font>
                     <Font name="System Bold" size="14.0" />
                 </font>
             </Label>
-            <TextField fx:id="userNameTextField" layoutX="269.0" layoutY="96.0" prefHeight="25.0" prefWidth="161.0" />
-            <Text fill="WHITE" layoutX="181.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email: " />
-            <Text fill="WHITE" layoutX="181.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone: " />
-            <CheckBox fx:id="termsAndConditionCheckBox" layoutX="180.0" layoutY="247.0" mnemonicParsing="false" onAction="#handleTermsCheckBox" prefHeight="17.0" prefWidth="244.0" text="I Read &amp; Agree to Terms and Conditions" textFill="WHITE" />
-            <TextField fx:id="emailTextFiled" layoutX="269.0" layoutY="136.0" prefHeight="25.0" prefWidth="161.0" />
-            <TextField fx:id="phoneTextField" layoutX="269.0" layoutY="173.0" prefHeight="25.0" prefWidth="161.0" />
-            <Label fx:id="errorLabel" layoutX="435.0" layoutY="278.0" prefHeight="33.0" prefWidth="151.0" textFill="WHITE" />
-            <PasswordField fx:id="passwordPasswordField" layoutX="269.0" layoutY="211.0" prefHeight="25.0" prefWidth="161.0" />
-            <Button layoutX="207.0" layoutY="339.0" mnemonicParsing="false" onAction="#handleAlreadyHaveAnAccountButton" prefHeight="30.0" prefWidth="187.0" style="-fx-background-color: #E74C3C;" text="Already Have an Account" textFill="WHITE">
+            <TextField fx:id="userNameTextField" layoutX="111.0" layoutY="96.0" prefHeight="25.0" prefWidth="161.0" />
+            <Text fill="WHITE" layoutX="23.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email: " />
+            <Text fill="WHITE" layoutX="23.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone: " />
+            <CheckBox fx:id="termsAndConditionCheckBox" layoutX="189.0" layoutY="262.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="244.0" text="I Read &amp; Agree to Terms and Conditions" textFill="WHITE" />
+            <TextField fx:id="emailTextFiled" layoutX="111.0" layoutY="136.0" prefHeight="25.0" prefWidth="161.0" />
+            <TextField fx:id="nameTextField" layoutX="400.0" layoutY="211.0" prefHeight="25.0" prefWidth="161.0" />
+            <PasswordField fx:id="passwordPasswordField" layoutX="111.0" layoutY="211.0" prefHeight="25.0" prefWidth="161.0" />
+            <Button layoutX="227.0" layoutY="329.0" mnemonicParsing="false" onAction="#handleAlreadyHaveAnAccountButton" prefHeight="30.0" prefWidth="169.0" style="-fx-background-color: #E74C3C;" text="Already Have an Account" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Button>
+            <Label layoutX="311.0" layoutY="100.0" text="Address: " textFill="WHITE" />
+            <Label layoutX="311.0" layoutY="215.0" prefHeight="17.0" prefWidth="88.0" text="Full Name:" textFill="WHITE" />
+            <TextArea fx:id="addressTextArea" layoutX="399.0" layoutY="98.0" prefHeight="98.0" prefWidth="162.0" />
+            <TextField fx:id="phoneTextField" layoutX="109.0" layoutY="173.0" prefHeight="25.0" prefWidth="161.0" />
         </children>
     </AnchorPane>
 </center>
