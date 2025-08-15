@@ -1,6 +1,6 @@
 package dsit.pmfinal.meddy.ceo.controller;
 
-import dsit.pmfinal.meddy.ceo.model.SalaryApproval;
+
 import dsit.pmfinal.meddy.utility.SceneSwitcher;
 import javafx.event.ActionEvent;
 import javafx.scene.Node;
@@ -10,15 +10,15 @@ import javafx.scene.control.TableView;
 public class SalaryApprovalController
 {
     @javafx.fxml.FXML
-    private TableColumn <SalaryApproval,String> columnDept;
+    private TableColumn columnDept;
     @javafx.fxml.FXML
-    private TableColumn <SalaryApproval,Double> columnAmount;
+    private TableColumn columnAmount;
     @javafx.fxml.FXML
-    private TableColumn <SalaryApproval,String> columnStatus;
+    private TableColumn columnStatus;
     @javafx.fxml.FXML
-    private TableView <SalaryApproval> tableSalarySheet;
+    private TableView tableSalarySheet;
     @javafx.fxml.FXML
-    private TableColumn <SalaryApproval,String> columnName;
+    private TableColumn columnName;
 
     @javafx.fxml.FXML
     public void initialize() {

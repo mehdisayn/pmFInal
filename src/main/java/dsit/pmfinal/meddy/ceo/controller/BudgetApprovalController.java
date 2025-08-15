@@ -1,6 +1,6 @@
 package dsit.pmfinal.meddy.ceo.controller;
 
-import dsit.pmfinal.meddy.ceo.model.BudgetApproval;
+
 import dsit.pmfinal.meddy.utility.SceneSwitcher;
 import javafx.event.ActionEvent;
 import javafx.scene.Node;
@@ -11,15 +11,15 @@ import javafx.scene.control.TableView;
 public class BudgetApprovalController
 {
     @javafx.fxml.FXML
-    private TableColumn <BudgetApproval,String> columnDept;
+    private TableColumn columnDept;
     @javafx.fxml.FXML
-    private TableView <BudgetApproval> tableBudgetProposals;
+    private TableView tableBudgetProposals;
     @javafx.fxml.FXML
-    private TableColumn <BudgetApproval,String> columnJustification;
+    private TableColumn columnJustification;
     @javafx.fxml.FXML
     private Label labelTotalRequested;
     @javafx.fxml.FXML
-    private TableColumn <BudgetApproval,Double> columnProposedBudget;
+    private TableColumn columnProposedBudget;
 
     @javafx.fxml.FXML
     public void initialize() {
