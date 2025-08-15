@@ -2,11 +2,12 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dsit.pmfinal.hares.maintenanceOfficer.">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dsit.pmfinal.hares.logisticsManager.ReportsController">
     <bottom>
         <Label text="devSharkIT" BorderPane.alignment="CENTER" />
     </bottom>
@@ -18,7 +19,7 @@
                         <Font name="System Bold" size="24.0" />
                     </font>
                 </Label>
-                <Label layoutX="17.0" layoutY="66.0" prefHeight="25.0" prefWidth="164.0" text="ProductionMonitor" textAlignment="CENTER" textFill="WHITE">
+                <Label layoutX="17.0" layoutY="66.0" prefHeight="25.0" prefWidth="164.0" text="Make Reports" textAlignment="CENTER" textFill="WHITE">
                     <font>
                         <Font name="System Bold" size="18.0" />
                     </font>
@@ -34,6 +35,22 @@
                     </font>
                 </Button>
                 <Label layoutX="14.0" layoutY="352.0" text="Enter goal " />
+            <TextArea fx:id="textAreaReports" layoutX="17.0" layoutY="101.0" prefHeight="180.0" prefWidth="358.0" />
+            <Button layoutX="411.0" layoutY="233.0" mnemonicParsing="false" onAction="#btnExportExcel" prefHeight="30.0" prefWidth="164.0" style="-fx-background-color: #E74C3C;" text="Export Excel " textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="409.0" layoutY="175.0" mnemonicParsing="false" onAction="#btnExportPDF" prefHeight="30.0" prefWidth="166.0" style="-fx-background-color: #E74C3C;" text="Export PDF" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="411.0" layoutY="119.0" mnemonicParsing="false" onAction="#btnGenerateReport" prefHeight="30.0" prefWidth="164.0" style="-fx-background-color: #E74C3C;" text="Generate Report" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
             </children>
         </AnchorPane>
     </center>
