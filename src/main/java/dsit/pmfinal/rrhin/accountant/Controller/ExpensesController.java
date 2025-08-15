@@ -3,6 +3,7 @@ package dsit.pmfinal.rrhin.accountant.Controller;
 import dsit.pmfinal.rrhin.accountant.model.Expenses;
 import javafx.event.ActionEvent;
 import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
 
 public class ExpensesController
 {
@@ -26,6 +27,11 @@ public class ExpensesController
     @javafx.fxml.FXML
     public void initialize() {
         categoryComBobox.getItems().addAll("Office Supplies", "Utilities", "Salaries", "Maintenance", "Marketing", "Other");
+
+        expenseIdCol.setCellValueFactory(new PropertyValueFactory<Expenses,Integer>("Expense ID"));
+        categoryCol.setCellValueFactory(new PropertyValueFactory<Expenses,String>("Category"));
+        amountCol.setCellValueFactory(new PropertyValueFactory<Expenses,Double>("Amount"));
+        dateCol.setCellValueFactory(new PropertyValueFactory<Expenses,String>("Date"));
     }
 
     @javafx.fxml.FXML

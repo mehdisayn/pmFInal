@@ -9,13 +9,14 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextArea;
+import javafx.scene.control.cell.PropertyValueFactory;
 
 public class ReportController
 {
     @javafx.fxml.FXML
     private TableColumn <Report,String> typeCol;
     @javafx.fxml.FXML
-    private TableColumn <Report,String> amountCol;
+    private TableColumn <Report,Integer> amountCol;
     @javafx.fxml.FXML
     private TableView <Report> reportTableView;
     @javafx.fxml.FXML
@@ -41,6 +42,9 @@ public class ReportController
                 "November",
                 "December");
         summaryTextArea.setStyle("-fx-control-inner-background: #E74C3C;");
+
+        amountCol.setCellValueFactory(new PropertyValueFactory<Report,Integer>("Amount"));
+        typeCol.setCellValueFactory(new PropertyValueFactory<Report,String>("Type"));
     }
 
     @javafx.fxml.FXML

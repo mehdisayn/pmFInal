@@ -9,7 +9,6 @@ import javafx.scene.Scene;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextArea;
-import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -31,10 +30,6 @@ public class TrackOrderController
 
     @javafx.fxml.FXML
     public void initialize() {
-        orderIdCol.setCellValueFactory(new PropertyValueFactory<TrackOrder,Integer>("Order ID"));
-        productCol.setCellValueFactory(new PropertyValueFactory<TrackOrder,String>("Product"));
-        dateCol.setCellValueFactory(new PropertyValueFactory<TrackOrder,String>("Date"));
-        statusCol.setCellValueFactory(new PropertyValueFactory<TrackOrder,String>("Status"));
     }
 
     //fields of Scene Switch
