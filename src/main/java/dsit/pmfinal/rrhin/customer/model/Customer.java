@@ -41,10 +41,6 @@ public class Customer extends User {
     }
 
 
-    @Override
-    public boolean login() {
-        return false;
-    }
 
     @Override
     public String generateId() {

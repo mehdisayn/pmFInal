@@ -1,5 +1,7 @@
 package dsit.pmfinal.model;
 
+import java.util.Objects;
+
 public abstract class User {
     private String id, name, phone, email, password;
 
@@ -63,7 +65,17 @@ public abstract class User {
 
     // Abstract method to be implemented by subclasses
 
-    public abstract boolean login();
+    public boolean login(String id, String password) {
+        //return this.id.equals(id) && this.password.equals(password);
+        if (Objects.equals(id, this.getId()) && Objects.equals(password, this.getPassword())) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+
+
     public abstract String generateId();
 
 
