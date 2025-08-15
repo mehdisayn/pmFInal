@@ -5,6 +5,7 @@ import javafx.event.ActionEvent;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextArea;
+import javafx.scene.control.cell.PropertyValueFactory;
 
 public class TaxAuditController
 {
@@ -21,6 +22,9 @@ public class TaxAuditController
 
     @javafx.fxml.FXML
     public void initialize() {
+        amountCol.setCellValueFactory(new PropertyValueFactory<TaxAudit,Double>("Amount"));
+        statusCol.setCellValueFactory(new PropertyValueFactory<TaxAudit,String>("Status"));
+        taxTypeCol.setCellValueFactory(new PropertyValueFactory<TaxAudit,String>("Tax Type"));
     }
 
     @javafx.fxml.FXML
