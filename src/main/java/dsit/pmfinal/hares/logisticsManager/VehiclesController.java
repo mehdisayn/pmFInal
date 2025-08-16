@@ -1,5 +1,8 @@
 package dsit.pmfinal.hares.logisticsManager;
 
+import javafx.event.ActionEvent;
+import javafx.scene.control.TableColumn;
+
 public class VehiclesController
 {
     @javafx.fxml.FXML

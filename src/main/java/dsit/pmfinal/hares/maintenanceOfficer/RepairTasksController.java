@@ -1,5 +1,9 @@
 package dsit.pmfinal.hares.maintenanceOfficer;
 
+import javafx.event.ActionEvent;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.TableColumn;
+
 public class RepairTasksController
 {
     @javafx.fxml.FXML

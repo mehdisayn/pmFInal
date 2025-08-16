@@ -38,10 +38,11 @@
                 <Label layoutX="14.0" layoutY="352.0" text="Review hiring/release decisions by HR" />
             <TableView fx:id="tableHRRequests" layoutX="14.0" layoutY="110.0" prefHeight="153.0" prefWidth="568.0">
               <columns>
-                <TableColumn fx:id="columnName" prefWidth="161.0" text="Name" />
-                <TableColumn fx:id="columnAction" prefWidth="132.0" text="Action (Hire/Release)" />
-                  <TableColumn fx:id="columnPosition" prefWidth="110.0" text="Position" />
-                  <TableColumn fx:id="columnJustification" prefWidth="164.0" text="Justification" />
+                <TableColumn fx:id="columnName" prefWidth="126.0" text="Name" />
+                <TableColumn fx:id="columnAction" prefWidth="124.0" text="Action (Hire/Release)" />
+                  <TableColumn fx:id="columnPosition" prefWidth="99.0" text="Position" />
+                  <TableColumn fx:id="columnJustification" prefWidth="118.0" text="Justification" />
+                  <TableColumn fx:id="columnStatus" prefWidth="99.0" text="Status" />
               </columns>
             </TableView>
             <Button layoutX="453.0" layoutY="271.0" mnemonicParsing="false" onAction="#btnRejectHRAction" prefHeight="28.0" prefWidth="128.0" style="-fx-background-color: green;" text="Approve Action" textFill="WHITE">

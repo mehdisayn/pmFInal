@@ -2,6 +2,7 @@ module dsit.pmfinal {
     requires javafx.controls;
     requires javafx.fxml;
     requires jdk.unsupported.desktop;
+    requires java.sql;
 
 
     opens dsit.pmfinal.rrhin.customer.Controller to javafx.fxml; // rahin's customer controllers
