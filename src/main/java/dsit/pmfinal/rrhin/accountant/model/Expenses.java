@@ -13,6 +13,9 @@ public class Expenses {
         this.category = category;
     }
 
+    public Expenses(String date, double v, String officeSupplies) {
+    }
+
     public LocalDate getDate() {
         return date;
     }

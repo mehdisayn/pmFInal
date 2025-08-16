@@ -2,6 +2,8 @@ package dsit.pmfinal.rrhin.accountant.Controller;
 
 import dsit.pmfinal.common_files.Jumper;
 import dsit.pmfinal.rrhin.accountant.model.FinancialStatements;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.scene.Node;
 import javafx.scene.control.ComboBox;
@@ -23,6 +25,9 @@ public class FinancialStatementsController
     @javafx.fxml.FXML
     private TableColumn <FinancialStatements,String> itemCol;
 
+    //dummy list for Financial Statement
+    private final ObservableList<FinancialStatements> financialStatementsList = FXCollections.observableArrayList();
+
     @javafx.fxml.FXML
     public void initialize() {
         selectPeriodComboBox.getItems().addAll("Last Month", "Last Quarter", "Last Year");
@@ -30,10 +35,31 @@ public class FinancialStatementsController
 
         amountCol.setCellValueFactory(new PropertyValueFactory<FinancialStatements,Integer>("Amount"));
         itemCol.setCellValueFactory(new PropertyValueFactory<FinancialStatements,String>("Item"));
+
+        financialStatementsList.add(new FinancialStatements("Last Month","Balance Sheet"));
+        financialStatementsList.add(new FinancialStatements("Last Year","Income Statement"));
+        financialStatementsList.add(new FinancialStatements("Last Month","Cash Flow Statement"));
+        financialStatementsList.add(new FinancialStatements("Last Quarter","Balance Sheet"));
+
+        financialStatementTableView.setItems(financialStatementsList);
     }
 
     @javafx.fxml.FXML
     public void handleGenStatementButton(ActionEvent actionEvent) {
+        try{
+            int newID = financialStatementsList.size()+1;
+            String period = selectPeriodComboBox.getValue();
+            String statementType = statementTypeComboBox.getValue();
+            FinancialStatements newFinancialStatementType = new FinancialStatements(period,statementType);
+            financialStatementsList.add(newFinancialStatementType);
+
+            financialStatementTableView.setItems(financialStatementsList);
+            //inputs
+            selectPeriodComboBox.setValue(null);
+            statementTypeComboBox.setValue(null);
+        }catch (Exception e){
+            System.out.println("Error adding Financial Statement"+e.getMessage());
+        }
     }
 
     @javafx.fxml.FXML
