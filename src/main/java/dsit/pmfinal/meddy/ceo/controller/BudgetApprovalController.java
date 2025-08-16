@@ -2,6 +2,7 @@ package dsit.pmfinal.meddy.ceo.controller;
 
 
 import dsit.pmfinal.meddy.ceo.model.Budget;
+import dsit.pmfinal.meddy.ceo.model.Ceo;
 import dsit.pmfinal.meddy.utility.SceneSwitcher;
 import javafx.beans.Observable;
 import javafx.collections.FXCollections;
@@ -13,6 +14,8 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
+
+import java.util.Objects;
 
 import static javafx.collections.FXCollections.observableArrayList;
 
@@ -34,6 +37,7 @@ public class BudgetApprovalController {
     @javafx.fxml.FXML
     private TableColumn<Budget, String> columnStatus;
 
+    Ceo ceo;
 
     // Dummy list of budget proposals for demonstration purposes
     ObservableList<Budget> budgetProposals = FXCollections.observableArrayList();
@@ -42,6 +46,18 @@ public class BudgetApprovalController {
 
     @javafx.fxml.FXML
     public void initialize() {
+        /*/ Initialize the CEO object
+        Budget dummyBudget1 = ceo.budgetApproval("756", "Marketing", "Increase brand awareness", 50000, "Pending");
+        Budget dummyBudget2 = ceo.budgetApproval("212", "Research", "New product development", 75000, "Pending");
+        Budget dummyBudget3 = ceo.budgetApproval("345", "Operations", "Efficiency improvements", 30000, "Pending");
+        /*/
+        /*/ Add dummy budgets to the list
+        budgetProposals.add(dummyBudget1);
+        budgetProposals.add(dummyBudget2);
+        budgetProposals.add(dummyBudget3);
+        /*/
+
+
         // Initialize the dummy table columns
 
         budgetProposals.add(new Budget("756","Marketing", "Increase brand awareness", 50000, "Pending"));
@@ -69,7 +85,6 @@ public class BudgetApprovalController {
 
 
 
-
     }
 
     @javafx.fxml.FXML
@@ -80,11 +95,23 @@ public class BudgetApprovalController {
     @javafx.fxml.FXML
     public void btnApprove(ActionEvent actionEvent) {
 
+     /*   String obs = comboboxObs.getValue();
+
+        for (Budget budget : budgetProposals) {
+            if (Objects.equals((budget.getObs()), obs)) {
+                //budget.setStatus("Approved");
+                this.ceo.budgetApproval(budget, "Approved");
+                break;
+            }
+        }*/
+
+
 
          //when i select combobox obs and press approve, it will calculate the total requested budget only for that Obs and display it in the label
         // and also change the status of the budget proposals to "Approved"
 
         String selectedObs = comboboxObs.getValue();
+
         if (selectedObs != null) {
             double total = 0;
             total += budgetProposals.stream()
@@ -99,6 +126,8 @@ public class BudgetApprovalController {
             tableBudgetProposals.refresh(); // Refresh the table to show updated status
 
 
+
+
             //save approved budget to database
         }
 
@@ -106,6 +135,19 @@ public class BudgetApprovalController {
 
     @javafx.fxml.FXML
     public void btnReject(ActionEvent actionEvent) {
+        /*String obs = comboboxObs.getValue();
+
+        for (Budget budget : budgetProposals) {
+            if (Objects.equals((budget.getObs()), obs)) {
+                //budget.setStatus("Approved");
+                this.ceo.budgetApproval(budget, "Approved");
+                System.out.println("Budget proposal for " + budget.getObs() + " has been rejected.");
+                break;
+
+            }
+        }*/
+
+
         String selectedObs = comboboxObs.getValue();
         if (selectedObs != null) {
             budgetProposals.stream()
