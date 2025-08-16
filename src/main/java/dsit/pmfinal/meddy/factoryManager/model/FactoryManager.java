@@ -12,7 +12,7 @@ public class FactoryManager extends User {
 
     @Override
     public String generateId() {
-        return "facman";
+        return "fm";
 
     }
 }
