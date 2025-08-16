@@ -1,5 +1,6 @@
 package dsit.pmfinal.meddy.factoryManager;
 
+import dsit.pmfinal.PrimarySceneSwitcher;
 import dsit.pmfinal.common_files.Jumper;
 import dsit.pmfinal.meddy.utility.SceneSwitcher;
 import javafx.event.ActionEvent;
@@ -29,6 +30,7 @@ public class FactoryManagerDashboardController
     @javafx.fxml.FXML
     public void btnLogout(ActionEvent actionEvent) {
         //SceneSwitcher.switchScene((Node)actionEvent.getSource(),"");
+        PrimarySceneSwitcher.primarySwitchScene((Node)actionEvent.getSource(),"login.fxml","Login");
     }
 
     @javafx.fxml.FXML
