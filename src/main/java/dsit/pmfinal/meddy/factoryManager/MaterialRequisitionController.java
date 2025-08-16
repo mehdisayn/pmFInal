@@ -1,6 +1,8 @@
 package dsit.pmfinal.meddy.factoryManager;
 
+import dsit.pmfinal.common_files.Jumper;
 import javafx.event.ActionEvent;
+import javafx.scene.Node;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
@@ -24,6 +26,7 @@ public class MaterialRequisitionController
 
     @javafx.fxml.FXML
     public void btnBack(ActionEvent actionEvent) {
+        Jumper.jump((Node)actionEvent.getSource(),"meddy/factoryManager","factory-manager-dashboard.fxml","Factory Manager DashBoard");
     }
 
     @javafx.fxml.FXML
