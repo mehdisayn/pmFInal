@@ -75,7 +75,4 @@ public class MakePaymentsController
         }
     }
 
-    @javafx.fxml.FXML
-    public void handleBackButton(ActionEvent actionEvent) {
-    }
 }

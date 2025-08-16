@@ -39,9 +39,6 @@ public class EditProfileController
     private Stage stage;
     private Scene scene;
 
-    @javafx.fxml.FXML
-    public void handleBackButton(ActionEvent actionEvent) {
-    }
 
     @javafx.fxml.FXML
     public void handleHomeButton(ActionEvent actionEvent) throws IOException {

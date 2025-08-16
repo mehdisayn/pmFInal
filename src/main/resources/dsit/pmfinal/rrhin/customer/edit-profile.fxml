@@ -22,9 +22,14 @@
       <PasswordField fx:id="oldPasswordPasswordField" layoutX="73.0" layoutY="215.0" promptText="Old Password: " style="-fx-background-color: #E74C3C;" />
       <Line endX="-31.0" endY="136.0" layoutX="336.0" layoutY="143.0" startX="-31.0" startY="-53.0" stroke="#e74c3c" strokeWidth="5.0" />
       <PasswordField fx:id="newPasswordPasswordField" layoutX="73.0" layoutY="255.0" promptText="New Password: " style="-fx-background-color: #E74C3C;" />
-      <Button layoutX="251.0" layoutY="307.0" mnemonicParsing="false" onAction="#handleSaveButton" prefHeight="55.0" prefWidth="98.0" style="-fx-background-color: #E74C3C;" text="Save" textFill="WHITE" />
-      <Button layoutX="396.0" layoutY="334.0" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="37.0" prefWidth="72.0" style="-fx-background-color: #E74C3C;" text="Back" textFill="WHITE" />
-      <Button layoutX="491.0" layoutY="334.0" mnemonicParsing="false" onAction="#handleHomeButton" prefHeight="37.0" prefWidth="72.0" style="-fx-background-color: #E74C3C;" text="Home" textFill="WHITE" />
+      <Button layoutX="251.0" layoutY="307.0" mnemonicParsing="false" onAction="#handleSaveButton" prefHeight="55.0" prefWidth="98.0" style="-fx-background-color: #E74C3C;" text="Save" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button layoutX="491.0" layoutY="334.0" mnemonicParsing="false" onAction="#handleHomeButton" prefHeight="37.0" prefWidth="72.0" style="-fx-background-color: #E74C3C;" text="Home" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
       <TextArea fx:id="errorTextArea" layoutX="387.0" layoutY="105.0" prefHeight="159.0" prefWidth="180.0" style="-fx-background-color: #E74C3C;" />
       <Label layoutX="410.0" layoutY="14.0" text="Hakkani Pulp &amp; Paper Mills Ltd" textFill="WHITE">
          <font>

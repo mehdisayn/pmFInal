@@ -10,7 +10,6 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #36454F;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dsit.pmfinal.rrhin.customer.Controller.PlaceOrderController">
    <children>
       <Label layoutX="218.0" layoutY="14.0" text="Place Order" textFill="#e74c3c">
@@ -24,9 +23,14 @@
       <TextField fx:id="quantityTextField" layoutX="226.0" layoutY="73.0" promptText="Quantity: " style="-fx-background-color: #E74C3C;" />
       <TextField fx:id="deliveryAddressTextField" layoutX="226.0" layoutY="124.0" promptText="Delivery Address: " style="-fx-background-color: #E74C3C;" />
       <DatePicker fx:id="expectedDeliveryDateDatePicker" layoutX="414.0" layoutY="73.0" promptText="Expected Delivery Date: " style="-fx-background-color: #E74C3C;" />
-      <Button layoutX="440.0" layoutY="120.0" mnemonicParsing="false" onAction="#handleOrderButton" prefHeight="59.0" prefWidth="105.0" style="-fx-background-color: #E74C3C;" text="ORDER" textFill="WHITE" />
+      <Button layoutX="440.0" layoutY="120.0" mnemonicParsing="false" onAction="#handleOrderButton" prefHeight="59.0" prefWidth="105.0" style="-fx-background-color: #E74C3C;" text="ORDER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
       <TextArea fx:id="statusTextArea" editable="false" layoutX="18.0" layoutY="216.0" prefHeight="145.0" prefWidth="283.0" style="-fx-background-color: #36454F;" wrapText="true" />
-      <Button layoutX="430.0" layoutY="318.0" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="37.0" prefWidth="71.0" style="-fx-background-color: #E74C3C;" text="Back" textFill="WHITE" />
-      <Button layoutX="528.0" layoutY="318.0" mnemonicParsing="false" onAction="#handleHomeButton" prefHeight="37.0" prefWidth="60.0" style="-fx-background-color: #E74C3C;" text="Home" textFill="WHITE" />
+      <Button layoutX="528.0" layoutY="318.0" mnemonicParsing="false" onAction="#handleHomeButton" prefHeight="37.0" prefWidth="60.0" style="-fx-background-color: #E74C3C;" text="Home" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
    </children>
 </AnchorPane>

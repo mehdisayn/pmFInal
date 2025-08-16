@@ -20,10 +20,15 @@
       <ComboBox fx:id="paperQualityGSMComboBox" layoutX="225.0" layoutY="91.0" prefWidth="150.0" promptText="Paper Quality [GSM]" style="-fx-background-color: #E74C3C;" />
       <TextField fx:id="addressTextField" layoutX="397.0" layoutY="91.0" prefHeight="25.0" prefWidth="192.0" promptText="Address: " style="-fx-background-color: #E74C3C;" />
       <Line endX="299.99993896484375" endY="6.0" layoutX="303.0" layoutY="197.0" startX="-300.0" startY="6.0" stroke="#e74c3c" strokeWidth="5.0" />
-      <Button layoutX="225.0" layoutY="278.0" mnemonicParsing="false" onAction="#handleRequestSampleButton" prefHeight="45.0" prefWidth="150.0" style="-fx-background-color: #E74C3C;" text="Request Sample" />
+      <Button layoutX="225.0" layoutY="278.0" mnemonicParsing="false" onAction="#handleRequestSampleButton" prefHeight="45.0" prefWidth="150.0" style="-fx-background-color: #E74C3C;" text="Request Sample">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
       <TextArea fx:id="errorTextArea" layoutX="12.0" layoutY="233.0" prefHeight="135.0" prefWidth="192.0" style="-fx-background-color: #E74C3C;" />
-      <Button layoutX="435.0" layoutY="337.0" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="31.0" prefWidth="72.0" style="-fx-background-color: #E74C3C;" text="Back" />
-      <Button layoutX="520.0" layoutY="337.0" mnemonicParsing="false" onAction="#handleHomeButton" prefHeight="31.0" prefWidth="72.0" style="-fx-background-color: #E74C3C;" text="Home" />
+      <Button layoutX="520.0" layoutY="337.0" mnemonicParsing="false" onAction="#handleHomeButton" prefHeight="31.0" prefWidth="72.0" style="-fx-background-color: #E74C3C;" text="Home">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
       <Label layoutX="429.0" layoutY="14.0" text="Hakkani Pulp &amp; Paper Mills Ltd" textFill="WHITE">
          <font>
             <Font name="Times New Roman" size="12.0" />

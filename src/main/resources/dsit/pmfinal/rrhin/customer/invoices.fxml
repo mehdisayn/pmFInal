@@ -9,7 +9,6 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="653.0" style="-fx-background-color: #36454F;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dsit.pmfinal.rrhin.customer.Controller.InvoicesController">
    <children>
       <Label layoutX="179.0" layoutY="14.0" text="Invoices &amp; Payments" textFill="#e74c3c" underline="true">
@@ -27,8 +26,13 @@
       </TableView>
       <TextArea fx:id="descriptionTextArea" editable="false" layoutX="439.0" layoutY="70.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #E74C3C;" />
       <Line endX="38.0" endY="-225.0" layoutX="386.0" layoutY="308.0" startX="38.0" startY="-62.0" stroke="#e74c3c" strokeWidth="3.0" />
-      <Button layoutX="143.0" layoutY="296.0" mnemonicParsing="false" onAction="#handleDownloadPDFButton" prefHeight="67.0" prefWidth="118.0" style="-fx-background-color: #E74C3C;" text="Download PDF" textFill="WHITE" />
-      <Button layoutX="452.0" layoutY="311.0" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="38.0" prefWidth="73.0" style="-fx-background-color: #E74C3C;" text="Back" textFill="WHITE" />
-      <Button layoutX="539.0" layoutY="311.0" mnemonicParsing="false" onAction="#handleHomeButton" prefHeight="38.0" prefWidth="73.0" style="-fx-background-color: #E74C3C;" text="Home" textFill="WHITE" />
+      <Button layoutX="143.0" layoutY="296.0" mnemonicParsing="false" onAction="#handleDownloadPDFButton" prefHeight="67.0" prefWidth="118.0" style="-fx-background-color: #E74C3C;" text="Download PDF" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button layoutX="539.0" layoutY="311.0" mnemonicParsing="false" onAction="#handleHomeButton" prefHeight="38.0" prefWidth="73.0" style="-fx-background-color: #E74C3C;" text="Home" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
    </children>
 </AnchorPane>

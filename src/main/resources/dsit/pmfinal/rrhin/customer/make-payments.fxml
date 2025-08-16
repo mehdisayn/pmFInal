@@ -27,10 +27,15 @@
       </TableView>
       <ComboBox fx:id="selectPaymentMethodComboBox" layoutX="22.0" layoutY="246.0" prefHeight="25.0" prefWidth="181.0" promptText="Select Payment Method" style="-fx-background-color: #E74C3C;" />
       <TextField fx:id="transactionIDTextField" layoutX="22.0" layoutY="284.0" prefHeight="25.0" prefWidth="181.0" promptText="Transaction ID: " style="-fx-background-color: #E74C3C;" />
-      <Button layoutX="52.0" layoutY="332.0" mnemonicParsing="false" onAction="#handlePayNowButton" prefHeight="45.0" prefWidth="87.0" style="-fx-background-color: #E74C3C;" text="Pay Now" />
+      <Button layoutX="52.0" layoutY="332.0" mnemonicParsing="false" onAction="#handlePayNowButton" prefHeight="45.0" prefWidth="87.0" style="-fx-background-color: #E74C3C;" text="Pay Now">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
       <TextArea fx:id="errorTextArea" layoutX="225.0" layoutY="248.0" prefHeight="123.0" prefWidth="181.0" style="-fx-background-color: #E74C3C;" />
-      <Button layoutX="438.0" layoutY="336.0" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="37.0" prefWidth="63.0" style="-fx-background-color: #E74C3C;" text="Back" />
-      <Button layoutX="516.0" layoutY="336.0" mnemonicParsing="false" onAction="#handleHomeButton" prefHeight="37.0" prefWidth="63.0" style="-fx-background-color: #E74C3C;" text="Home" />
+      <Button layoutX="516.0" layoutY="336.0" mnemonicParsing="false" onAction="#handleHomeButton" prefHeight="37.0" prefWidth="63.0" style="-fx-background-color: #E74C3C;" text="Home">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
       <Label layoutX="423.0" layoutY="14.0" text="Hakkani Pulp &amp; Paper Mills Ltd" textFill="WHITE">
          <font>
             <Font name="Times New Roman" size="12.0" />

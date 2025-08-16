@@ -41,9 +41,6 @@ public class SubmitComplaintController
     private Scene scene;
     private Parent root;
 
-    @javafx.fxml.FXML
-    public void handleBackButton(ActionEvent actionEvent) {
-    }
 
     @javafx.fxml.FXML
     public void handleHomeButton(ActionEvent actionEvent) throws IOException {

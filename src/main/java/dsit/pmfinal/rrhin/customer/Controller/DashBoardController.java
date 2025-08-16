@@ -30,9 +30,6 @@ public class DashBoardController
     private Scene scene;
     private Parent root;
 
-    @Deprecated
-    public void handleButton(ActionEvent actionEvent) {
-    }
 
     @javafx.fxml.FXML
     public void handleEditProfileButton(ActionEvent actionEvent) throws IOException {
@@ -107,9 +104,5 @@ public class DashBoardController
         scene=new Scene(root);
         stage.setScene(scene);
         stage.setTitle("Submit Complaint");
-    }
-
-    @Deprecated
-    public void black(Event event) {
     }
 }
