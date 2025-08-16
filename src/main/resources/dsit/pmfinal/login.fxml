@@ -45,6 +45,10 @@
                   <Font name="System Bold" size="13.0" />
                </font>
             </Label>
+            <Label alignment="TOP_LEFT" layoutX="23.0" layoutY="75.0" prefHeight="19.0" prefWidth="60.0" text="ceo 1234 " textFill="WHITE" />
+            <Label alignment="TOP_LEFT" layoutX="23.0" layoutY="104.0" prefHeight="19.0" prefWidth="101.0" text="customer cus123" textFill="WHITE" />
+            <Label alignment="TOP_LEFT" layoutX="23.0" layoutY="136.0" prefHeight="19.0" prefWidth="101.0" text="accountant acc123" textFill="WHITE" />
+            <Label alignment="TOP_LEFT" layoutX="23.0" layoutY="169.0" prefHeight="19.0" prefWidth="101.0" text="fm 1234" textFill="WHITE" />
             </children>
         </AnchorPane>
     </center>

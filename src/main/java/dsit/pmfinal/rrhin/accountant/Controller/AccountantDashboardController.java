@@ -24,7 +24,6 @@ public class AccountantDashboardController
     @javafx.fxml.FXML
     public void handlePurchaseApprovalsButton(ActionEvent actionEvent) {
         Jumper.jump((Node) actionEvent.getSource(),"rrhin.accountant","purchase-approvals.fxml","Purchase Approvals");
-
     }
 
     @javafx.fxml.FXML
@@ -35,14 +34,11 @@ public class AccountantDashboardController
     @javafx.fxml.FXML
     public void handleInventoryValuationButton(ActionEvent actionEvent) {
         Jumper.jump((Node) actionEvent.getSource(), "rrhin.accountant", "inventory-valuation.fxml", "Inventory Valuation");
-
     }
 
     @javafx.fxml.FXML
     public void handleReportButton(ActionEvent actionEvent) {
         Jumper.jump((Node) actionEvent.getSource(), "rrhin.accountant", "report.fxml", "Report");
-
-
     }
 
     @javafx.fxml.FXML
