@@ -4,10 +4,10 @@ import java.time.LocalDate;
 
 public class SalesIncome {
     private LocalDate saleDate;
-    private String amount;
+    private double amount;
     private String clientName;
 
-    public SalesIncome(LocalDate saleDate, String amount, String clientName) {
+    public SalesIncome(LocalDate saleDate, double amount, String clientName) {
         this.saleDate = saleDate;
         this.amount = amount;
         this.clientName = clientName;
@@ -21,11 +21,11 @@ public class SalesIncome {
         this.saleDate = saleDate;
     }
 
-    public String getAmount() {
+    public double getAmount() {
         return amount;
     }
 
-    public void setAmount(String amount) {
+    public void setAmount(double amount) {
         this.amount = amount;
     }
 

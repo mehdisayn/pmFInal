@@ -1,10 +1,12 @@
 package dsit.pmfinal.rrhin.accountant.Controller;
 
+import dsit.pmfinal.common_files.Jumper;
 import dsit.pmfinal.rrhin.accountant.model.PurchaseApprovals;
 import dsit.pmfinal.rrhin.accountant.model.SalaryReports;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
+import javafx.scene.Node;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 
@@ -63,6 +65,7 @@ public class SalaryReportsController
 
     @javafx.fxml.FXML
     public void handleHomeButton(ActionEvent actionEvent) {
+        Jumper.jump((Node)actionEvent.getSource(),"rrhin.accountant","accountant-dashboard","Accountant Dashboard");
         System.out.println("Returning to Accounting Dashboard");
     }
 
