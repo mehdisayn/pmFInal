@@ -67,7 +67,7 @@ public class ReportController
     public void handleExportReportButton(ActionEvent actionEvent) {
         Report selectedReport = reportTableView.getSelectionModel().getSelectedItem();
         if (selectedReport != null) {
-            // Simulate exporting
+
             System.out.println("Exporting report: " + selectedReport.getSummary());
             summaryTextArea.setText("Report exported successfully!");
         } else {
@@ -85,7 +85,7 @@ public class ReportController
             return;
         }
 
-        // Search dummy list for matching report
+
         for (Report r : reportObservableList) {
             if (r.getYear().equals(selectedYear) && r.getMonth().equals(selectedMonth)) {
                 summaryTextArea.setText(r.getSummary());
@@ -93,7 +93,7 @@ public class ReportController
             }
         }
 
-        // If no report found
+
         summaryTextArea.setText("No report found for " + selectedMonth + ", " + selectedYear);
     }
 }

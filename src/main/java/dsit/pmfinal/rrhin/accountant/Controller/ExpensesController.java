@@ -57,18 +57,18 @@ public class ExpensesController
     @javafx.fxml.FXML
     public void handleAddExpenseButton(ActionEvent actionEvent) {
         try {
-            //gen new ID
+
             int newId = expensesList.size()+1;
-            //taking input values
+
             String category = categoryComBobox.getValue();
             double amount = Double.parseDouble(amountTextField.getText());
             String date = (dateDatePicker.getValue()!=null)?dateDatePicker.getValue().toString():"N/A";
-            //Create new expenses and adding to the list
+
             Expenses newExpense = new Expenses(date,amount,category);
             expensesList.add(newExpense);
 
             trackExpensesTableView.setItems(expensesList);
-            //inputs
+
             amountTextField.clear();
             dateDatePicker.setValue(null);
             categoryComBobox.setValue(null);

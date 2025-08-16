@@ -73,7 +73,7 @@ public class SalaryReportsController
     public void handleExportPDFButton(ActionEvent actionEvent) {
         SalaryReports selected = salaryReportsTableView.getSelectionModel().getSelectedItem();
         if (selected != null) {
-            // Simulate exporting
+
             System.out.println("Exporting salary report for: " + selected.getName());
             salaryReportsTextArea.setText("PDF exported successfully for " + selected.getName());
         } else {

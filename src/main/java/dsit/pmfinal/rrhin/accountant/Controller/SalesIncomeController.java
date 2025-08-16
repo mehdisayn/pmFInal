@@ -69,7 +69,7 @@ public class SalesIncomeController
         SalesIncome newSale = new SalesIncome(date, amount, client);
         salesIncomeObservableList.add(newSale);
 
-        // Clear input fields
+
         clientNameTextField.clear();
         amountTextField.clear();
         saleDateDatePicker.setValue(null);
